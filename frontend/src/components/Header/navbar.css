@@ -1,0 +1,127 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+  padding-bottom: 0 !important;
+  max-height: 76px;
+}
+.logo img {
+  height: 75px;
+  width: 166px;
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+}
+.auth {
+  display: flex;
+  gap: 5px;
+  justify-content: flex-end;
+}
+.auth .login {
+  width: 100px;
+  background-color: white;
+  color: #ff219f;
+  border-radius: 5px;
+  border: 2px solid #ff219f;
+}
+.auth .signup {
+  width: 100px;
+  background-color: #ff219f;
+  border: 2px solid #ff219f;
+  border-radius: 5px;
+  color: white;
+}
+.menubar {
+  display: flex;
+}
+ul {
+  display: flex;
+}
+.nav ul li {
+  list-style: none;
+  font-size: 13px;
+  color: #929292;
+}
+
+.nav ul li:hover{
+  color: black;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content li a {
+  text-decoration: none;
+  color: #8A8A8A;
+  font-size: 13px;
+  font-weight: 600;
+}
+.dropdown-content li a:hover {
+  color: #0097e6;
+}
+
+.dropdown-content li {
+  padding: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.menubar2 {
+  display: none;
+}
+.hamburger {
+  display: none;
+}
+
+
+/* ------------------------------------media query------------------------------------------ */
+@media screen and (max-width: 1150px) and (min-width: 250px) {
+    .menubar {
+      display: none;
+    }
+    .menubar2 {
+      display: block;
+      background-color: white;
+      width: 257px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+      position: absolute;
+      top: 99px;
+      z-index: 10;
+      right: 9px;
+    }
+    .auth {
+      display: none;
+    }
+    .hamburger {
+      display: block;
+    }
+  
+    .menubar2 ul li {
+      list-style: none;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
