@@ -5,6 +5,9 @@
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
   padding-bottom: 0 !important;
   max-height: 76px;
+  position: sticky;
+  top: 0;
+  z-index: 100000;
 }
 .logo img {
   height: 75px;

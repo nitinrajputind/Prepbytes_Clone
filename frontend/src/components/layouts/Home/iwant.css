@@ -1,0 +1,78 @@
+.container-4 {
+    width: 100%;
+    padding: 30px 0 0 0 ;
+}
+
+.container-4-heading {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #707070;
+    margin: 35px 0 35px 0;
+}
+
+.program {
+    display: flex;
+    gap: 120px;
+    flex-wrap: wrap;
+    margin-bottom: 200px;
+    justify-content: center;
+}
+
+.image-container {
+    position: relative;
+}
+
+.program div .sub-program {
+    height: 300px;
+    width: 270px;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -33%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: start;
+}
+.program div .sub-program:hover{
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.program div img {
+    height: 311px;
+    width: 254px;
+}
+
+.program div .sub-program img {
+    height: 150px;
+    width: 200px;
+}
+
+.sub-program p {
+    text-align: left;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 29px;
+}
+
+.sub-program button {
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    height: 50px;
+    right: 39%;
+    bottom: -27px;
+    background-color: #fff;
+    border: 2px solid #00a5ec;
+    color: #00a5ec;
+    font-size: 22px;
+    font-family: 900;
+}

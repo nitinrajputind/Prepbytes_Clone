@@ -31,7 +31,6 @@ const Navbar = () => {
           <ul class="menu">
             <li class="dropdown dropdown-toggle"> Study Material
               <ul class="dropdown-content ">
-                <li> <Link>Interview Notes</Link> </li>
                 <li><Link>Mock Test</Link></li>
                 <li><Link>Video Tutorial</Link></li>
               </ul>
@@ -41,27 +40,18 @@ const Navbar = () => {
           <ul>
             <li class="dropdown dropdown-toggle"> Course and Program
               <ul class="dropdown-content ">
-                <li><Link>Placement Program</Link></li>
                 <li><Link>Master Competitive Programming</Link></li>
                 <li><Link>Full Stack Program</Link></li>
               </ul>
             </li>
           </ul>
-
-          <ul>
-            <li>Practice Coding</li>
-          </ul>
           
           <ul>
             <li>Elevation Academy</li>
           </ul>
-          
+                    
           <ul>
-            <li>CBM Internships</li>  
-          </ul>
-          
-          <ul>
-            <li class="dropdown dropdown-toggle">Blog
+            <li class="dropdown dropdown-toggle">Project
               <ul class="dropdown-content ">
                 <li><Link>HTML</Link></li>
                 <li><Link> CSS</Link></li>
@@ -74,7 +64,7 @@ const Navbar = () => {
           </ul>
 
           <ul>
-            <li>User</li>
+            <li>Hi Nitin Rajput</li>
           </ul>
           
         </div>
@@ -90,9 +80,6 @@ const Navbar = () => {
       {
       menuOpen ? (
               <div className="menubar2">
-                <ul>
-                  <li>Placment Program</li>
-                </ul>
                 
                 <ul>
                   <li>Master Competitive Programming</li>
@@ -107,19 +94,11 @@ const Navbar = () => {
                 </ul>
                 
                 <ul>
-                  <li>Practice code</li>
-                </ul>
-                
-                <ul>
                   <li>Mock Tests</li>
                 </ul>
                 
                 <ul>
                   <li>Video Tutorial</li>
-                </ul>
-                
-                <ul>
-                  <li>CBM Interships</li>
                 </ul>
                 
                 <ul style={{ color: "#ff219f" }}>

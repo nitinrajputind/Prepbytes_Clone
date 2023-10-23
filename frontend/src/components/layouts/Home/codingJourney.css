@@ -1,0 +1,181 @@
+.CodingJourney {
+    background: #f8fafa;
+    min-height: 1000px;
+}
+.CodingJourney__main {
+    display: flex;
+    padding: 80px 0 0;
+    min-height: 1440px;
+    margin: 0 auto;
+}
+.CodingJourney__main-left {
+    width: 45%;
+}
+.CodingJourney__main-right {
+    width: 50%;
+    padding-right: 144px;
+}
+
+.CodingJourney__main-left--img{
+    width: 90%;
+}
+
+.CodingJourney__main-right--heading {
+    color: #424242;
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.CodingJourney__main-right--subheading {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #858585;
+}
+.CodingJourney__main-right--img {
+    display: none;
+}
+.CodingJourney__main-right-container-card-one {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 30px 0;
+    padding: 20px 0;
+}
+.CodingJourney__main-right-container-card-one-left {
+    width: 50%;
+}
+.CodingJourney__main-right-container-card-one-left--heading {
+    color: #f78077;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 3px;
+    text-align: left;
+    text-transform: uppercase;
+}
+.CodingJourney__main-right-container-card-one-left-box {
+    background: #fff 0 0 no-repeat padding-box;
+    -webkit-box-shadow: 0 3px 25px rgba(0,0,0,.10196078431372549);
+    box-shadow: 0 3px 25px rgba(0,0,0,.10196078431372549);
+    border-radius: 5px;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 250px;
+}
+.CodingJourney__main-right-container-card-one-left-box--img {
+    margin-left: -30px;
+}
+.CodingJourney__main-right-container-card-one-left-box--text {
+    margin-left: 20px;
+    padding: 20px 0;
+    font-weight: 500;
+    width: 80%;
+    color: rgb(247, 128, 119);
+}
+.CodingJourney__main-right-container-card-one-right {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-bottom: -40px;
+}
+
+
+.CodingJourney__main-right-container-card-two {
+    position: relative;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 30px 0;
+    padding: 20px 0;
+}
+.CodingJourney__main-right-container-card-two-left {
+    width: 50%;
+    position: absolute;
+    left: 15%;
+    bottom: 0;
+}
+.CodingJourney__main-right-container-card-two-right {
+    width: 50%;
+}
+.CodingJourney__main-right-container-card-two-right-box {
+    background: #fff 0 0 no-repeat padding-box;
+    -webkit-box-shadow: 0 3px 25px rgba(0,0,0,.10196078431372549);
+    box-shadow: 0 3px 25px rgba(0,0,0,.10196078431372549);
+    border-radius: 5px;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 250px;
+}
+.CodingJourney__main-right-container-card-two-right-box--img {
+    margin-left: -30px;
+}
+.CodingJourney__main-right-container-card-two-right-box--text {
+    margin-left: 20px;
+    padding: 20px 0;
+    font-weight: 500;
+    width: 80%;
+}
+.CodingJourney__main-right-container-card-three {
+    padding-left: 50px;
+}
+.CodingJourney__main-right-container-card-three--img{
+    width: 70%;
+}
+
+
+@media screen and (max-width: 1022px) {
+
+    .CodingJourney__main-left--img,
+    .CodingJourney__main-left {
+        display: none;
+    }
+    .CodingJourney__main-right--img {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        opacity: .1;
+        position: absolute;
+        left: 0;
+    }
+    .CodingJourney__main-right{
+        width: 90%;
+        margin: auto;
+        padding: 0%;
+        text-align: center;
+    }
+    .CodingJourney__main-right {
+        padding-right: 0 !important;
+    }
+    .CodingJourney__main-right--heading {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 30em){
+    .CodingJourney__main-right-container-card-one-left--heading {
+        font-size: 16px;
+    }
+    .CodingJourney__main-right-container-card-two-right-box--text {
+    margin-left: 0;
+    }
+    .CodingJourney__main-right-container-card-three {
+        padding-left: 0px;
+    }
+    .CodingJourney__main-right-container-card-two-right-box , 
+    .CodingJourney__main-right-container-card-one-left-box {
+        width: 154px;
+    }
+}
