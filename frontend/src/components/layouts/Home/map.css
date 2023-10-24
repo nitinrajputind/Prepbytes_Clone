@@ -1,0 +1,8 @@
+.student-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .student-map img {
+    width: 100%;
+  }

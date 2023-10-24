@@ -1,0 +1,208 @@
+.Collage_Main_Contanier{
+    width: 100%;
+}
+.college {
+    min-height: 364px;
+    max-width: 1238px;
+    margin: 80px auto 15px;
+    background-size: cover;
+    box-shadow: 0 0 20px rgba(0,0,0,.1607843137254902);
+    border-radius: 20px;
+    position: relative;
+    background-color: #fff;
+}
+
+.college-heading {
+    position: absolute;
+    top: 50%;
+    left: 29%;
+    width: 50%;
+    transform: translate(-45%, -50%);
+}
+.college-heading .sub-heading h3{
+    margin-top: -60px;
+    margin-bottom: 50px;
+    width: 80%;
+    font-size: 35px;
+    letter-spacing: 0;
+    color: #004461;
+    font-weight: 600;
+}
+
+.college-heading .sub-heading p{
+    color: #00afec;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+
+.college-heading .sub-heading button {
+    background: transparent linear-gradient(104deg,#f1127c,#f86667) 0 0 no-repeat padding-box;
+    letter-spacing: 0;
+    color: #f7f7f7;
+    font-size: 18px;
+    margin: 20px 0;
+    text-transform: unset;
+    padding: 5px 45px;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+.college img {
+    width: 100%;
+    /* Make sure the image fills the container */
+    height: 400px;
+    display: block;
+    box-shadow: 0px -1px 14px 4px grey;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.college .college-hidden {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .sub-heading{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .college-heading .sub-heading h3{
+        margin-bottom: 0px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 592px) {
+    .college .college-display{
+        display: none;
+    }
+    .college .college-hidden {
+        display: block;
+    }
+    .college-heading .sub-heading h3 {
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+    }
+    .college-heading .sub-heading p {
+        font-size: 14px;
+        text-align: center;
+    }
+    .sub-heading{
+        margin: auto;
+    }
+    .college-heading {
+        position: absolute;
+        top: 36%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+    }
+    .college-heading .sub-heading button{
+        width: 200px;
+        margin: auto;
+    }
+}
+
+
+
+
+
+
+
+/* -------------------------------Mentors & Colleges---------------------------------------------- */
+.Prepbytes_college h3{
+    text-align: center;
+    color: #424242;
+    margin: 80px auto auto;
+}
+
+.Prepbytes_college p {
+    color: #858585;
+    text-align: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    /* padding-bottom: 50px; */
+}
+
+.college-mentor {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 90px;
+    margin-top: 160px;
+}
+
+.college-mentor .inner-college-mentor {
+    width: 350px;
+}
+
+.inner-college-mentor {
+    background-color: white;
+    position: relative;
+    height: 450px;
+    box-shadow: 0 3px 30px rgba(0,0,0,.1607843137254902);
+    transition: transform 0.1s ease-out;
+    /* Add a transition for smooth movement */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-college-mentor:hover {
+    transform: translateY(-5px);
+    /* Move the element 5px up on hover */
+}
+
+.inner-college-mentor img {
+    width: 94%;
+    margin-top: -84px;
+    display: block;
+}
+
+.inner-college-mentor h3 {
+    color: #424242;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 52px 5px;
+    text-align: center;
+}
+
+.inner-college-mentor p {
+    color: #858585;
+    font-size: 16px;
+    padding: 10px 50px;
+    text-align: center;
+}
+
+.inner-college-mentor button {
+    display: block;
+    margin: auto;
+    width: 180px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid #00a5ec;
+    background-color: #00a5ec;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: -50%;
+    transform: translate(10px, -20px);
+    left: -50%;
+}
+
+@media screen  and (max-width: 768px) {
+    .college-mentor{
+        row-gap: 125px;
+    }
+}

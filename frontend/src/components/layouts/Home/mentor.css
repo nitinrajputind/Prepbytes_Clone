@@ -1,0 +1,44 @@
+.continer-7 {
+    background-color: #bcf2fb;
+    display: flex;
+    justify-content: center;
+}
+
+.continer-7 .inner {
+    width: 80%;
+    margin-top: 120px;
+    position: relative;
+    bottom: 0px;
+}
+
+.continer-7 .inner .hidden {
+    width: 80%;
+    display: flex;
+    margin: auto;
+}
+
+.continer-7 .inner .display {
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    .continer-7 .inner .hidden {
+        display: none;
+    }
+
+    .continer-7 .inner .display {
+        display: block;
+        width: 100%;
+        display: flex;
+        margin: auto;
+    }
+    .college-heading {
+        position: absolute;
+        top: 50%;
+        width: 32%;
+        left: 30%;
+        width: 68%;
+        transform: translate(-22%, -105%);
+    }
+}
