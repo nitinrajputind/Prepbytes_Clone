@@ -1,4 +1,4 @@
-const mocktest = require("../controller/MockController");
+const mocktest = require("../controller/mockController");
 const { register, login, dashboard } = require("../controller/userController");
 const userAuth = require("../middleware/auth_middle");
 const routes = require("express").Router();
