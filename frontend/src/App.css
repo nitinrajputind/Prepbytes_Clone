@@ -1,11 +1,210 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
 }
-body{
+
+body {
     font-family: 'Poppins', sans-serif;
+}
+
+
+/*================================ Mock Test =========================================== */
+
+.Mock_Banner {
+    width: 100%;
+    background: transparent linear-gradient(180deg, #3969ad, #1d3557) 0 0 no-repeat padding-box;
+    min-height: 200px;
+}
+
+.Mock_texContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+    max-width: 1280px;
+    color: #fff;
+}
+
+.Mock_texContent h1 {
+    font: 32px Poppins;
+    font-weight: 600;
+    padding-top: 36px;
+    padding-bottom: 26px;
+}
+
+.Mock_texContent p {
+    width: 50%;
+    font-size: 14px;
+    letter-spacing: .14px;
+    line-height: 1.4;
+    padding-bottom: 29px;
+}
+
+.FeaturedMockTestList {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.FeaturedMockTestList__main--heading {
+    color: #22559c;
+    font-size: 28px;
+}
+.FeaturedMockTestList__main-container--past-heading {
+    text-align: center;
+    color: #ffa000;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 18px;
+    position: relative;
+    margin: 15px 0 40px;
+}
+.FeaturedMockTestList__main-container--past-heading:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    height: 3px;
+    width: 40%;
+    margin-top: 11px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #5f8dc4;
+}
+.FeaturedMockTestList__main-container--past-heading:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 60%;
+    top: 0;
+    height: 3px;
+    width: 40%;
+    margin-top: 11px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #5f8dc4;
+    margin-left: auto;
+}
+.FeaturedMockTestList__main-container--past-mocktest {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+
+@media screen and (max-width: 768px) {
+    .Mock_texContent p{
+        width: 90%;
+    }
+    .FeaturedMockTestList__main-container--past-heading:before,
+    .FeaturedMockTestList__main-container--past-heading:after{
+        width: 27vw;
+    }
+}
+
+
+/*========================= Tutorial =============================== */
+
+.VideoRepositoryMain__header {
+    background: #d9f5f9 0 0 no-repeat padding-box;
+    min-height: 300px;
+    max-width: 1251px;
+    margin: auto;
+}
+.VideoRepositoryMain__header-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    max-width: 1168px;
+    color: #fff;
+    justify-content: space-between;
+}
+.VideoRepositoryMain__header-container-left {
+    width: 40%;
+    padding-top: 65px;
+}
+.VideoRepositoryMain__header-container-left-top {
+    font-size: 32px;
+    font-weight: 600;
+    padding-top: 16px;
+    padding-bottom: 19px;
+    margin-top: 10px;
+    color: #00a5ec;
+}
+.VideoRepositoryMain__header-container-left-bottom {
+    font-size: 14px;
+    letter-spacing: .14px;
+    padding-bottom: 29px;
+    padding-right: 10px;
+    color: #424242;
+}
+
+.VideoRepositoryMain__main {
+    margin: 0 auto;
+    max-width: 1251px;
+}
+.VideoRepositoryMain__main-content--heading {
+    font-size: 18px;
+    color: #22559c;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    position: relative;
+}
+.VideoRepositoryMain__main-content--heading:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: -20px;
+    top: 80%;
+    height: 2px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #22559c;
+    margin: 11px auto;
+}
+.VideoRepositoryMain__main-content--cards {
+    max-width: 1251px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .VideoRepositoryMain__header-container {
+        flex-direction: column-reverse;
+    }
+    .VideoRepositoryMain__header-container-left-top {
+        font-size: 24px;
+    }
+    .VideoRepositoryMain__header-container-left {
+        padding-top: 0;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 75em){
+    .VideoRepositoryMain__header-container {
+        padding: 20px;
+    }
 }

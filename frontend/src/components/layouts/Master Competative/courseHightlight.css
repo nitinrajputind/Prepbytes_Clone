@@ -1,0 +1,40 @@
+.CoursePageHighlights__main_container {
+    max-width: 1280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.CoursePageHighlights__main_sub-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-bottom: 3rem;
+    justify-content: space-around;
+    box-sizing: border-box;
+    color: #2e2e2e;
+    width: 85%;
+    padding: 0rem 32px;
+}
+.CoursePageHighlights__list_container-0 {
+    border-bottom: 4px solid #df3897;
+    border-right: 4px solid #df3897;
+    margin-right: .75rem;
+}
+.CoursePageHighlights__img-container {
+    width: 17%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.CoursePageHighlights__img {
+    height: 60%;
+    max-height: 4rem;
+}
+.CoursePageHighlights__list_text {
+    margin-left: 1rem;
+    font: normal normal 700 1rem/1.5rem Inter;
+    letter-spacing: 0px;
+    width: 80%;
+}

@@ -220,4 +220,7 @@
     .policy ul{
         column-gap: 5px;
     }
+    .FooterStrip_Contanier{
+        display: none;
+    }
 }

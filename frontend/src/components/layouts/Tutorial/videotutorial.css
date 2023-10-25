@@ -1,0 +1,48 @@
+.VideoRepositoryMain__main-content--cards-card {
+    width: 360px;
+    min-height: 450px;
+    margin: 20px;
+    background: #fff 0 0 no-repeat padding-box;
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.11372549019607843);
+    box-shadow: 0 3px 6px rgba(0,0,0,.11372549019607843);
+    position: relative;
+    border-radius: 10px;
+}
+.VideoRepositoryMain__main-content--cards-card-top--img {
+    width: 100%;
+    height: 55%;
+    padding: 3%;
+    border-radius: 15px;
+}
+.VideoRepositoryMain__main-content--cards-card-middle {
+    padding: 15px 20px;
+}
+.VideoRepositoryMain__main-content--cards-card-middle--text {
+    color: #424242;
+    font-weight: 500;
+    font-size: 18px;
+}
+.VideoRepositoryMain__main-content--cards-card-middle--desc {
+    margin-top: 7px;
+    font-size: 14px;
+    color: #858585;
+    letter-spacing: .5px;
+}
+.VideoRepositoryMain__main-content--cards-card-bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.VideoRepositoryMain__main-content--cards-card-bottom--text {
+    color: #858585;
+    font-size: 12px;
+    margin-left: 7px;
+    margin-top: 13px;
+}

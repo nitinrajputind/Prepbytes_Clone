@@ -1,5 +1,4 @@
 const USER = require("../model/userSchema")
-const PRODUCTS = require("../model/productSchema")
 const bcrypt = require("bcrypt")
 const jwt = require("jsonwebtoken")
 
@@ -68,8 +67,6 @@ const login = async (req, res) => {
     }
 }
 
-
-
 const dashboard = (req, res)=>{
     return res.send({
         result : "My name is Nitin and You are Verify"
@@ -77,25 +74,6 @@ const dashboard = (req, res)=>{
 }
 
 
-const searchproduct = async(req, res)=>{
-    try{
-        const search = req.body.search;
-        console.log(search);
-
-        const searching = await PRODUCTS.find({
-            Name : {$regex : new RegExp(search , "i")}, // "i" for case-insensitive search
-        });
-        if(searching.length > 0){
-            return res.status(200).json({success : true, msg : "Products Details", data : searching});
-        }else{
-            return res.status(404).json({msg : "No matching products found"});
-        }
-    }
-    catch(err){
-        console.log(err.message);
-        return res.status(500).json({msg : "Internal Server Error" , error : err.message});
-    }
-}
 
 
 
@@ -105,4 +83,4 @@ const searchproduct = async(req, res)=>{
 
 
 
-module.exports = {register , login , dashboard , searchproduct}
+module.exports = {register , login , dashboard }

@@ -1,0 +1,163 @@
+.PastMockTestCard {
+    width: 17em;
+    padding: 10px;
+    background: transparent linear-gradient(180deg,#e0ebf9,#fff 54%,#fff) 0 0 no-repeat padding-box;
+    -webkit-box-shadow: 0 10px 30px rgba(95,141,196,.2);
+    box-shadow: 0 10px 30px rgba(95,141,196,.2);
+    border-radius: 5px;
+    color: #707070;
+    margin: 0 auto 30px;
+}
+.PastMockTestCard__image {
+    text-align: center;
+    margin: 10px 0;
+}
+.PastMockTestCard__image--img {
+    height: 80px;
+    width: 70%;
+}
+.PastMockTestCard__heading {
+    text-align: center;
+    color: #3969ad;
+    font-weight: 500;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    font-size: 18px;
+}
+.PastMockTestCard__middle, .PastMockTestCard__middle-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.PastMockTestCard__middle-left {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    position: relative;
+}
+.PastMockTestCard__middle-left-top {
+    margin-top: 20px;
+    color: #707070;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.PastMockTestCard__middle-left-bottom {
+    font-size: 11px;
+    color: #707070;
+}
+.PastMockTestCard__middle-left:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 100%;
+    top: 20%;
+    height: 1px;
+    width: 2px;
+    height: 62px;
+    margin-left: 12px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #e0ebf9;
+}
+.PastMockTestCard__middle-middle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+}
+.PastMockTestCard__middle-middle-top {
+    margin-top: 20px;
+    color: #707070;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.PastMockTestCard__middle-middle-bottom {
+    font-size: 11px;
+    color: #707070;
+}
+.PastMockTestCard__middle-middle:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 100%;
+    top: 20%;
+    height: 1px;
+    width: 2px;
+    height: 62px;
+    margin-left: 12px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #e0ebf9;
+}
+.PastMockTestCard__middle-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.PastMockTestCard__middle-right-top {
+    margin-top: 20px;
+    color: #707070;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.PastMockTestCard__middle-right-bottom {
+    font-size: 11px;
+    color: #707070;
+}
+.PastMockTestCard__bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.PastMockTestCard__bottom--button {
+    background: #22559c;
+    -webkit-box-shadow: 0 3px 6px rgba(95,141,196,.2);
+    box-shadow: 0 3px 6px rgba(95,141,196,.2);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 11px 33.7px;
+    font-size: 16px;
+    color: #fff;
+    margin: 10px 0;
+    text-decoration: none;
+    border: none;
+}

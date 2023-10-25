@@ -29,10 +29,11 @@ const Navbar = () => {
         
         <div className="menubar">
           <ul class="menu">
-            <li class="dropdown dropdown-toggle"> Study Material
+            <li class="dropdown dropdown-toggle"> 
+            Study Material
               <ul class="dropdown-content ">
-                <li><Link>Mock Test</Link></li>
-                <li><Link>Video Tutorial</Link></li>
+                <li><Link to={"/Mock"}>Mock Test</Link></li>
+                <li><Link to={"/Tutorial"}>Video Tutorial</Link></li>
               </ul>
             </li>
           </ul>
@@ -40,7 +41,7 @@ const Navbar = () => {
           <ul>
             <li class="dropdown dropdown-toggle"> Course and Program
               <ul class="dropdown-content ">
-                <li><Link>Master Competitive Programming</Link></li>
+                <li><Link to={"/master-competitive-programming"}>Master Competitive Programming</Link></li>
                 <li><Link>Full Stack Program</Link></li>
               </ul>
             </li>
