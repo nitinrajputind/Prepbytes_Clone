@@ -83,7 +83,7 @@ const Navbar = () => {
               <div className="menubar2">
                 
                 <ul>
-                  <li>Master Competitive Programming</li>
+                  <li><Link to={"/master-competitive-programming"}>Master Competitive Programming</Link></li>
                 </ul>
                 
                 <ul>
@@ -95,11 +95,11 @@ const Navbar = () => {
                 </ul>
                 
                 <ul>
-                  <li>Mock Tests</li>
+                  <li><Link to={"/Mock"}>Mock Test</Link></li>
                 </ul>
                 
                 <ul>
-                  <li>Video Tutorial</li>
+                  <li><Link to={"/Tutorial"}>Video Tutorial</Link></li>
                 </ul>
                 
                 <ul style={{ color: "#ff219f" }}>
