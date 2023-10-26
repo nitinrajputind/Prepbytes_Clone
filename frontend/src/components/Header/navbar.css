@@ -106,13 +106,14 @@ ul {
     .menubar2 {
       display: block;
       background-color: white;
-      width: 257px;
+      width: 269px;
       box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
       position: absolute;
-      top: 99px;
+      top: 76px;
       z-index: 10;
       right: 9px;
-    }
+      padding-top: 8px;
+  }
     .auth {
       display: none;
     }

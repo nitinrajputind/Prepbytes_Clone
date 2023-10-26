@@ -1,0 +1,125 @@
+.Course_Feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    opacity: 1;
+    box-sizing: border-box;
+    margin: 20px auto;
+    max-width: 1227px;
+    color: #151414;
+}
+
+.Course_Feature h2 {
+    font-size: 22px;
+    letter-spacing: 0px;
+    opacity: 1;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.program1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0rem 1rem;
+
+}
+
+.Align_Right ol li,
+.Align_Right h2 {
+    text-align: end;
+    margin-bottom: 0;
+}
+
+.Align_Left ol li,
+.Align_Left h2 {
+    text-align: start;
+    margin-bottom: 0;
+}
+
+
+
+.list-of-program .inner-program img {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+
+.inner-program {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.Inner_Program_icon {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background: #fff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 15px rgba(138, 138, 138, .1607843137);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.Inner_Program_icon img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-inner-program h2 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.inner-inner-program p {
+    font-size: 12px;
+}
+
+.list-img {
+    width: 300px;
+}
+
+.list-img img {
+    width: 100%;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .list-img {
+        display: none;
+    }
+
+    .program1 {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .inner-program1 {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .inner-program {
+        justify-content: flex-start;
+        align-items: center;
+        gap: none;
+    }
+    .Align_Right, .Align_Right h2 , .Align_Right p{
+        text-align: start;
+    }
+    .list-of-program ol li{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}

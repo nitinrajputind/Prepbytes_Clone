@@ -1,0 +1,143 @@
+.CoursesPage__container-batchDetails {
+    scroll-margin-top: 150px;
+}
+.CoursePageBatchDetails__section_main_container {
+    width: 100%;
+    border-top: .5px solid #c2c2c2;
+    border-bottom: .5px solid #c2c2c2;
+    box-sizing: content-box;
+    padding: 3rem 0;
+    box-sizing: border-box;
+}
+.CoursePageBatchDetails__section_container {
+    max-width: 1366px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    padding: 5px 0 0;
+}
+.CoursePageBatchDetails__batch_text_section, 
+.CoursePageBatchDetails__section_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.CoursePageBatchDetails__heading {
+    margin-left: 10px;
+    width: 9rem;
+    font-size: 1.1rem;
+    font: normal normal 400 1.1rem/1.5rem Inter;
+}
+
+.CoursePageBatchDetails__section {
+    width: 74%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.CoursePageBatchComponent_radio_buttons_not-selected {
+    color: #1b7ed8;
+    background: #fff 0 0 no-repeat padding-box;
+    box-shadow: 0 0 5px rgba(37,37,37,.1607843137254902);
+    border-radius: 5px;
+    border-bottom: 5px solid #00a6eb;
+}
+.CoursePageBatchComponent_radio_buttons {
+    background: #fff 0 0 no-repeat padding-box;
+    border-radius: 5px;
+    padding: .25rem;
+    margin: .25rem 1.1rem;
+    width: 11.5rem;
+    height: 4.5rem;
+    position: relative;
+}
+.CoursePageBatchComponent_radio_label {
+    display: flex;
+    cursor: pointer;
+}
+input[type=radio] {
+    display: inline!important;
+    width: 18px!important;
+    height: 18px!important;
+    position: relative;
+    top: 10px;
+}
+.CoursePageBatchComponent__radio_input {
+    opacity: 0;
+}
+.CoursePageBatchComponent__radio_text_container {
+    width: 100%;
+    padding-top: 5px;
+}
+.CoursePageBatchComponent__radio_batch_start_date {
+    font-size: 1.1rem;
+    position: relative;
+}
+
+.CoursePageBatchComponent__date_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.CoursePageBatchComponent_radio_buttons_selected {
+    color: #fff;
+    background: #00a6eb 0 0 no-repeat padding-box;
+    box-shadow: 0 0 10px rgba(37,37,37,.1607843137254902);
+    border: 1px solid #00a3e6;
+    border-radius: 5px;
+}
+
+.CoursePageBatchComponent_radio_buttons_not-selected {
+    color: #1b7ed8;
+    background: #fff 0 0 no-repeat padding-box;
+    box-shadow: 0 0 5px rgba(37,37,37,.1607843137254902);
+    border-radius: 5px;
+    border-bottom: 5px solid #00a6eb;
+}
+
+.CoursePageBatchComponent__reg_end_date_not-selected {
+    font: normal normal 400 .9rem/2rem Inter;
+    letter-spacing: 0;
+    color: #031e4d;
+}
+
+.CoursePageBatchDetails__enrollNow_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+}
+.CoursePageBatchDetails__actual_priceamount_no_discount {
+    text-align: left;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font: normal normal 600 1.75rem/3rem Inter;
+    letter-spacing: 0;
+    color: #08a2eb;
+}
+.CoursePageBatchDetails__cta_container {
+    display: flex;
+    justify-content: space-between;
+}
+.CoursePageBatchDetails__enroll_now_button {
+    border: none;
+    min-width: 130px;
+    padding: 10px;
+    color: #fffaf0;
+    font-size: 16px;
+    cursor: pointer;
+    background: transparent linear-gradient(79deg,#3194ee,#1477d2) 0 0 no-repeat padding-box;
+    box-shadow: 0 3px 6px rgba(0,0,0,.1607843137254902);
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 700px) {
+    .CoursePageBatchDetails__batch_text_section, .CoursePageBatchDetails__section_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}

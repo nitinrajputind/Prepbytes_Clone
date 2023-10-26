@@ -1,0 +1,134 @@
+.Curriculum_Contanier {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1rem 0rem;
+    box-sizing: border-box;
+    padding: 1rem 0rem;
+    font-weight: 300;
+    max-width: 1147px;
+    margin: auto;
+}
+
+.Curriculum_Contanier h1 {
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    color: #151414;
+    font-size: 1.75rem;
+    margin-bottom: 3rem;
+}
+
+.Curriculum {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #363636;
+}
+
+.inner-Curriculum {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    align-items: center;
+    padding-right: 1rem;
+    font-weight: 600;
+    position: relative;
+}
+
+.inner-Curriculum .choice {
+    height: 60px;
+    margin-bottom: 1rem;
+    width: 95%;
+    padding: .5rem 1rem;
+    color: #00a6ec;
+    background: #fff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 8px rgba(133, 133, 133, .1607843137);
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.inner-Curriculum .choice img {
+    width: 30px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.choice p {
+    border-left: 1.2px solid #00a6ec;
+    padding-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: auto 0;
+    font-size: 14px;
+}
+
+.inner-Curriculum .curculam-img {
+    height: 10rem;
+    aspect-ratio: 1/.6;
+    position: absolute;
+    bottom: 0;
+
+}
+
+.inner-Curriculum .curculam-img img {
+    width: 100%;
+}
+
+.inner-Curriculum2 {
+    border-right: 5px solid #00a6eb;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0rem 3rem;
+    height: 100%;
+    box-shadow: 0px 2px 8px rgba(156, 154, 154, .1607843137);
+    border-radius: 10px;
+    overflow: scroll;
+}
+
+.inner-Curriculum2 ul li::marker {
+    content: '●';
+    color: #00a6eb;
+    font-size: 1.1em;
+    margin-right: 19px;
+}
+
+
+.inner-Curriculum2 ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.inner-Curriculum2 ul li {
+    position: relative;
+    padding-left: 2rem;
+    margin: 1rem 0rem;
+    font-size: 12px;
+    color: #151414;
+}
+
+@media screen and (max-width: 768px) {
+    .Curriculum {
+        flex-direction: column;
+    }
+    .inner-Curriculum{
+        width: 95%;
+        margin: auto;
+    }
+    .inner-Curriculum .curculam-img img {
+        display: none;
+    }
+    .inner-Curriculum2{
+        width: 90%;
+        margin: auto;
+    }
+}

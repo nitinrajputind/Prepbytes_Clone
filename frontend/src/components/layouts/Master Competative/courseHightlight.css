@@ -16,13 +16,32 @@
     width: 85%;
     padding: 0rem 32px;
 }
+
+.CoursePageHighlights__list_container-0,
+.CoursePageHighlights__list_container-1,
+.CoursePageHighlights__list_container-2,
+.CoursePageHighlights__list_container-3{
+        width: 48%;
+        min-height: 70px;
+        background-size: contain;
+        margin: .75rem 0rem;
+        border-radius: 5px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: .25rem .5rem;
+        margin-left: 0rem;
+        box-sizing: border-box;
+        background: #fff 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px rgba(70,70,70,.1607843137);
+
+}
 .CoursePageHighlights__list_container-0 {
     border-bottom: 4px solid #df3897;
     border-right: 4px solid #df3897;
     margin-right: .75rem;
 }
 .CoursePageHighlights__img-container {
-    width: 17%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -37,4 +56,44 @@
     font: normal normal 700 1rem/1.5rem Inter;
     letter-spacing: 0px;
     width: 80%;
+}
+
+
+.CoursePageHighlights__list_container-1 {
+    border-bottom: 4px solid #0398d3;
+    border-right: 4px solid #0398d3;
+    margin-left: .75rem;
+}
+
+
+
+.CoursePageHighlights__list_container-2 {
+    border-bottom: 4px solid #7914a3;
+    border-right: 4px solid #7914a3;
+    margin-right: .75rem;
+}
+
+.CoursePageHighlights__list_container-3 {
+    border-bottom: 4px solid #eb9a00;
+    border-right: 4px solid #eb9a00;
+    margin-left: .75rem;
+}
+
+@media screen and (max-width: 768px) {
+    .CoursePageHighlights__main_sub-container {
+        padding: 0rem 1rem;
+        width: 100%;
+    }
+    .CoursePageHighlights__list_container-0, .CoursePageHighlights__list_container-1, .CoursePageHighlights__list_container-2, .CoursePageHighlights__list_container-3 {
+        width: 47%;
+        min-height: 120px;
+        padding: 0rem 1rem;
+    }
+}
+@media screen and (max-width: 450px) {
+    .CoursePageHighlights__list_container-0, .CoursePageHighlights__list_container-1, .CoursePageHighlights__list_container-2, .CoursePageHighlights__list_container-3 {
+        width: 90%;
+        min-height: 5.5rem;
+        margin: .5rem 0rem;
+    }
 }

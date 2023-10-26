@@ -83,27 +83,27 @@ const Navbar = () => {
               <div className="menubar2">
                 
                 <ul>
-                  <li><Link to={"/master-competitive-programming"}>Master Competitive Programming</Link></li>
+                  <li><Link to={"/master-competitive-programming"} onClick={toogle}  style={{color:"unset", textDecoration:"none"}}>Master Competitive Programming</Link></li>
                 </ul>
                 
                 <ul>
-                  <li>Full Stack Program</li>
+                  <li><Link style={{color:"unset", textDecoration:"none"}}>Full Stack Program</Link></li>
                 </ul>
                 
                 <ul>
-                  <li>Elevation Academy</li>
+                  <li><Link style={{color:"unset", textDecoration:"none"}}>Elevation Academy</Link></li>
                 </ul>
                 
                 <ul>
-                  <li><Link to={"/Mock"}>Mock Test</Link></li>
+                  <li><Link to={"/Mock"} onClick={toogle} style={{color:"unset", textDecoration:"none"}}>Mock Test</Link></li>
                 </ul>
                 
                 <ul>
-                  <li><Link to={"/Tutorial"}>Video Tutorial</Link></li>
+                  <li><Link to={"/Tutorial"} onClick={toogle} style={{color:"unset", textDecoration:"none"}} >Video Tutorial</Link></li>
                 </ul>
                 
                 <ul style={{ color: "#ff219f" }}>
-                  <li>Login/signup</li>
+                  <li><Link style={{color:"unset", textDecoration:"none"}}>Login/signup</Link></li>
                 </ul>
               </div>) 
               

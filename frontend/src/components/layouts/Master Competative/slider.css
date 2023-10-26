@@ -1,0 +1,67 @@
+.parent {
+    width: 80%;
+    display: block;
+    margin: auto;
+    max-width: 1147px;
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+}
+.parent h1{
+    width: 100%;
+    text-align: center;
+    color: #151414;
+    font: normal normal 500 1.75rem/2rem Inter;
+    margin-bottom: 1.5rem;
+
+}
+.slider {
+    margin: 0 20px;
+    height: 400px;
+    overflow: "hidden";
+    border-radius: 10px;
+    padding: 2rem 0;
+}
+
+.slider img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.slider .design {
+    width: 100%;
+}
+
+.slider p {
+    text-align: justify;
+}
+
+.slider .namedesign {
+    display: flex;
+    /* margin: inherit; */
+}
+
+.slider .namedesign img {
+    width: 50px;
+    height: 50px;
+}
+
+.slider .namedesign h3 {
+    padding-right: 90px;
+    font-size: 19px;
+    font-weight: 600;
+}
+.react-multi-carousel-list {
+    padding: 0rem 0 7rem 0;
+}
+
+.custom-dot-list-style button {
+    border: none;
+    background: none;
+}
+
+.react-multi-carousel-dot.react-multi-carousel-dot--active button {
+    background: none !important;
+}

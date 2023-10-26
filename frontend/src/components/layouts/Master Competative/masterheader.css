@@ -1,7 +1,7 @@
 .CoursesPageMastHeadHeader {
     max-width: 1280px;
     margin: auto;
-    /* height: 48vh; */
+    margin-bottom: 60px;
 }
 .CoursesPageMastHeadHeader__container {
     display: flex;
