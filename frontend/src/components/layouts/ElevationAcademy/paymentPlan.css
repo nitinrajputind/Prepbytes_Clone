@@ -1,0 +1,161 @@
+.PaymentPlans {
+    background: #fdf0d7;
+}
+.PaymentPlans__main {
+    padding: 80px 0;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+.PaymentPlans__main--heading {
+    text-align: center;
+    color: #3e4041;
+    font-size: 35px;
+    font-weight: 600;
+}
+.PaymentPlans__main--subheading {
+    text-align: center;
+    color: #312e2d;
+    font-size: 22px;
+    width: fit-content;
+    margin: 10px auto 30px;
+}
+.PaymentPlans__main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.PaymentPlans__main-container-right {
+    width: 50%;
+    padding-bottom: 20px;
+    background: #d6f4ff 0 0 no-repeat padding-box;
+    box-shadow: 0 0 10px hsla(0,0%,55.3%,.1607843137254902);
+    border-radius: 17px;
+    padding-left: 5%;
+    position: relative;
+}
+.PaymentPlans__main-label-img {
+    position: absolute;
+    top: 5%;
+    right: -3.5%;
+    width: 44%;
+}
+.PaymentPlans__main-container-left-heading {
+    letter-spacing: 0;
+    color: #312e2d;
+    font-size: 22px;
+    padding-top: 20px;
+    font-weight: 400;
+}
+.PaymentPlans__main-container-left-book {
+    color: #312e2d;
+    font-size: 20px;
+    margin-top: 30px;
+}
+.PaymentPlans__main-container-right-amount {
+    display: flex;
+    align-items: center;
+}
+.PaymentPlans__main-container-right-amount-actual {
+    color: #009fe3;
+    font-size: 20px;
+    font-weight: 600;
+}
+.PaymentPlans__main-container-right-break, 
+.PaymentPlans__main-container-right-break-refund {
+    color: #686463;
+    width: 80%;
+    margin: 18px 0 2px;
+}
+.PaymentPlans__main-container-right-detail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+}
+.PaymentPlans__main-container-right-detail-title {
+    font-size: 11px;
+}
+.PaymentPlans__main-container-right-detail-unplace {
+    margin-left: 3px;
+    font-size: 11px;
+    letter-spacing: 0;
+}
+.PaymentPlans__main-container-right-emi {
+    font-size: 20px;
+    color: #312e2d;
+}
+.PaymentPlans__main-container-right-calculation {
+    display: flex;
+    align-items: center;
+    color: #312e2d;
+    font-size: 16px;
+}
+.PaymentPlans__main-container-right-calculation-price {
+    letter-spacing: 0;
+    color: #009fe3;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 2px;
+}
+.PaymentPlans__main-container-emi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.PaymentPlans__main--container-card-left-second--btn {
+    color: #f7f7f7;
+    background: #01a5ec 0 0 no-repeat padding-box;
+    box-shadow: 0 3px 6px rgba(0,0,0,.1607843137254902);
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+    padding: 15px 52px 14px 51px;
+    font-size: 15px;
+    margin-top: 30px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.PaymentPlans__main--guidelines {
+    margin: 40px;
+}
+.PaymentPlans__main--guidelines-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin: 20px 0;
+}
+.PaymentPlans__main--guidelines-container--img {
+    margin-top: 5px;
+    height: 20px;
+    width: 20px;
+    margin-right: 12px;
+}
+.PaymentPlans__main--guidelines-container--text span {
+    color: #424242;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1024px) {
+    .PaymentPlans__main-container-left-heading {
+        font-size: 18px;
+    }
+    .PaymentPlans__main-container-left-book, 
+    .PaymentPlans__main-container-right-amount, 
+    .PaymentPlans__main-container-right-amount-actual, 
+    .PaymentPlans__main-container-right-amount-discount, 
+    .PaymentPlans__main-container-right-calculation-price, 
+    .PaymentPlans__main-container-right-emi, 
+    .PaymentPlans__main-container-right-pay {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .PaymentPlans__main-container-right {
+        width: 90%;
+        padding-left: 10%;
+    }
+}

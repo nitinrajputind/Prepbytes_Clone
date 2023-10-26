@@ -10,7 +10,12 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const toogle = () => {
     setMenuOpen(!menuOpen);
+    window.scroll(0,0)
   };
+
+  const scroller = ()=>{
+    window.scroll(0,0)
+  }
 
 
   return (
@@ -23,8 +28,8 @@ const Navbar = () => {
       
       <div className="nav">
         <div className="auth">
-          <button className="login">Login</button>
-          <button className="signup">Signup</button>
+          <button className="login" onClick={scroller}>Login</button>
+          <button className="signup" onClick={scroller}>Signup</button>
         </div>
         
         <div className="menubar">
@@ -32,8 +37,8 @@ const Navbar = () => {
             <li class="dropdown dropdown-toggle"> 
             Study Material
               <ul class="dropdown-content ">
-                <li><Link to={"/Mock"}>Mock Test</Link></li>
-                <li><Link to={"/Tutorial"}>Video Tutorial</Link></li>
+                <li><Link to={"/Mock"} onClick={scroller}>Mock Test</Link></li>
+                <li><Link to={"/Tutorial"} onClick={scroller}>Video Tutorial</Link></li>
               </ul>
             </li>
           </ul>
@@ -41,25 +46,25 @@ const Navbar = () => {
           <ul>
             <li class="dropdown dropdown-toggle"> Course and Program
               <ul class="dropdown-content ">
-                <li><Link to={"/master-competitive-programming"}>Master Competitive Programming</Link></li>
-                <li><Link to={"/online-full-stack-developer-mern-certification-program"}>Full Stack Program</Link></li>
+                <li><Link to={"/master-competitive-programming"} onClick={scroller}>Master Competitive Programming</Link></li>
+                <li><Link to={"/online-full-stack-developer-mern-certification-program"} onClick={scroller}>Full Stack Program</Link></li>
               </ul>
             </li>
           </ul>
           
           <ul>
-            <Link to={"/elevation-academy"} style={{textDecoration:"none"}}><li>Elevation Academy</li></Link>
+            <Link to={"/elevation-academy"} style={{textDecoration:"none"}} onClick={scroller}><li>Elevation Academy</li></Link>
           </ul>
                     
           <ul>
             <li class="dropdown dropdown-toggle">Project
               <ul class="dropdown-content ">
-                <li><Link>HTML</Link></li>
-                <li><Link> CSS</Link></li>
-                <li><Link>Javascript</Link></li>
-                <li><Link>React</Link></li>
-                <li><Link>Node</Link></li>
-                <li><Link>Mongodb</Link></li>
+                <li><Link onClick={scroller}>HTML</Link></li>
+                <li><Link onClick={scroller}> CSS</Link></li>
+                <li><Link onClick={scroller}>Javascript</Link></li>
+                <li><Link onClick={scroller}>React</Link></li>
+                <li><Link onClick={scroller}>Node</Link></li>
+                <li><Link onClick={scroller}>Mongodb</Link></li>
               </ul>
             </li>
           </ul>
@@ -87,11 +92,11 @@ const Navbar = () => {
                 </ul>
                 
                 <ul>
-                  <li><Link to={"/online-full-stack-developer-mern-certification-program"}    style={{color:"unset", textDecoration:"none"}}>Full Stack Program</Link></li>
+                  <li><Link to={"/online-full-stack-developer-mern-certification-program"} onClick={toogle} style={{color:"unset", textDecoration:"none"}}>Full Stack Program</Link></li>
                 </ul>
                 
                 <ul>
-                  <li><Link to={"/elevation-academy"}   style={{color:"unset", textDecoration:"none"}}>Elevation Academy</Link></li>
+                  <li><Link to={"/elevation-academy"} onClick={toogle} style={{color:"unset", textDecoration:"none"}}>Elevation Academy</Link></li>
                 </ul>
                 
                 <ul>
@@ -103,7 +108,7 @@ const Navbar = () => {
                 </ul>
                 
                 <ul style={{ color: "#ff219f" }}>
-                  <li><Link style={{color:"unset", textDecoration:"none"}}>Login/signup</Link></li>
+                  <li><Link  onClick={toogle}  style={{color:"unset", textDecoration:"none"}}>Login/signup</Link></li>
                 </ul>
               </div>) 
               
