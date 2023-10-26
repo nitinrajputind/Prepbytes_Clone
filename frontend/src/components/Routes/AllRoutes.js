@@ -6,6 +6,8 @@ import Mock from '../Pages/Mock'
 import Tutorial from '../Pages/Tutorial'
 import Footer from '../Footer/Footer';
 import MasterCompetative from '../Pages/MasterCompetative'
+import FullStack from '../Pages/FullStack'
+import ElevationAcademy from '../Pages/ElevationAcademy'
 
 
 const AllRoutes = () => {
@@ -18,6 +20,8 @@ const AllRoutes = () => {
         <Route path='/Mock' element={<Mock/>}/>
         <Route path='/Tutorial' element={<Tutorial/>}/>
         <Route path='/master-competitive-programming' element={<MasterCompetative/>}/>
+        <Route path='/online-full-stack-developer-mern-certification-program' element={<FullStack/>}/>
+        <Route path='/elevation-academy' element={<ElevationAcademy/>}/>
       </Routes>
 
       <Footer/>

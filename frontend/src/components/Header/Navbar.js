@@ -42,13 +42,13 @@ const Navbar = () => {
             <li class="dropdown dropdown-toggle"> Course and Program
               <ul class="dropdown-content ">
                 <li><Link to={"/master-competitive-programming"}>Master Competitive Programming</Link></li>
-                <li><Link>Full Stack Program</Link></li>
+                <li><Link to={"/online-full-stack-developer-mern-certification-program"}>Full Stack Program</Link></li>
               </ul>
             </li>
           </ul>
           
           <ul>
-            <li>Elevation Academy</li>
+            <Link to={"/elevation-academy"} style={{textDecoration:"none"}}><li>Elevation Academy</li></Link>
           </ul>
                     
           <ul>
@@ -87,11 +87,11 @@ const Navbar = () => {
                 </ul>
                 
                 <ul>
-                  <li><Link style={{color:"unset", textDecoration:"none"}}>Full Stack Program</Link></li>
+                  <li><Link to={"/online-full-stack-developer-mern-certification-program"}    style={{color:"unset", textDecoration:"none"}}>Full Stack Program</Link></li>
                 </ul>
                 
                 <ul>
-                  <li><Link style={{color:"unset", textDecoration:"none"}}>Elevation Academy</Link></li>
+                  <li><Link to={"/elevation-academy"}   style={{color:"unset", textDecoration:"none"}}>Elevation Academy</Link></li>
                 </ul>
                 
                 <ul>

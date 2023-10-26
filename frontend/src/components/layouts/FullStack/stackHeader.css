@@ -1,0 +1,115 @@
+.StackHeader {
+    color: #fff;
+    min-height: 550px;
+    background: url("https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/development-programs/full-stack-bg.png") center bottom / cover fixed;
+}
+.StackHeader-main {
+    min-height: 60vh;
+    margin: 0 auto;
+    max-width: 1280px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.StackHeader-main__left {
+    width: 50%;
+    padding: 80px 0;
+}
+.StackHeader-main__left--partner {
+    letter-spacing: .24px;
+    color: #fff;
+}
+.StackHeader-main__left--top {
+    width: 220px;
+    height: 98px;
+    border-radius: 10px;
+    background: transparent linear-gradient(90deg,#fff,#c7eaff) 0 0 no-repeat padding-box;
+    opacity: 1;
+}
+.StackHeader-main__left--heading {
+    font-size: 28px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+.StackHeader-main__left--text {
+    margin-bottom: 45px;
+    font-size: 18px;
+}
+.StackHeader-main__left-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+}
+
+.StackHeader-main__left-buttons--button-syllabus {
+    background: transparent;
+    -webkit-box-shadow: 0 3px 6px rgba(95,141,196,.2);
+    box-shadow: 0 3px 6px rgba(95,141,196,.2);
+    border-radius: 5px;
+    color: #ff219f;
+    border: 1px solid #ff219f;
+    padding: 14px 51px 13px 50px;
+    font-weight: 400;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+}
+.StackHeader_box {
+    width: 300px;
+    height: 80px;
+    background: #fff 0 0 no-repeat padding-box;
+    box-shadow: 0 0 10px rgba(0,0,0,.1607843137254902);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: content-box;
+    text-align: center;
+    margin: 10px 0;
+}
+.StackHeader_box__heading {
+    font-size: 15px;
+    letter-spacing: 0;
+    color: #424242;
+}
+.StackHeader_box__text {
+    font-size: 14px;
+    letter-spacing: 0;
+    color: #858585;
+}
+
+.StackHeader_main__right, .StackHeader_main__right-lp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.StackHeader_main__right {
+    width: 50%;
+    flex-direction: column;
+    top: 55px;
+}
+
+@media screen and (max-width: 768px) {
+    .StackHeader-main {
+        flex-direction: column;
+        padding: 0;
+    }
+    .StackHeader-main__left {
+        width: 100%;
+        padding: 40px 20px;
+    }
+    .StackHeader_main__right, .StackHeader_main__right-lp {
+        top: 0;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .StackHeader_main__right {
+        background-color: #fff;
+        flex-direction: row;
+    }
+}

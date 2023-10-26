@@ -1,0 +1,168 @@
+.IncomeSharingHeader {
+    color: #3e4041;
+    min-height: 550px;
+    background: #fff;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+.IncomeSharingHeader-main {
+    margin: 0 auto;
+    max-width: 1286px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: rgb(253, 240, 215);
+}
+
+.IncomeSharingHeader-main__right {
+    width: 70%;
+    height: 620px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-image: url("https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/ISA-masthead-mern-5.webp");
+}
+
+.IncomeSharingHeader-main__right--img {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+
+.IncomeSharingHeader-main__left {
+    width: 52%;
+    padding: 80px 40px;
+}
+.IncomeSharingHeader-main__left--heading {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+.IncomeSharingHeader-main__left--text {
+    width: 70%;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #424242;
+}
+.IncomeSharingHeader-main__left-list {
+    margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+}
+.IncomeSharingHeader-main__left-list-item {
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 7px;
+}
+.IncomeSharingHeader-main__left-list-item--img {
+    height: 12px;
+    width: 12px;
+}
+.IncomeSharingHeader-main__left-list-item--text {
+    margin-top: 15px;
+
+    margin-left: 7px;
+    font-size: 18px;
+    color: #424242;
+}
+
+.IncomeSharingHeader-main__left-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.IncomeSharingHeader-main__left-buttons--button-enroll {
+    margin-right: 30px;
+    background: #00a5ec 0 0 no-repeat padding-box;
+    border: none;
+    padding: 15px 52px 14px 51px;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 18px;
+}
+.IncomeSharingHeader-main__left-buttons--button-knowmore {
+    background: transparent;
+    -webkit-box-shadow: 0 3px 6px rgba(95,141,196,.2);
+    box-shadow: 0 3px 6px rgba(95,141,196,.2);
+    border-radius: 5px;
+    color: #00a5ec;
+    border: 1px solid #00a5ec;
+    padding: 14px 51px 13px 50px;
+    font-weight: 400;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1200px) {
+    .IncomeSharingHeader-main__left--heading {
+        font-size: 30px;
+    }
+    .IncomeSharingHeader-main__left--text {
+        font-size: 16px;
+    }
+    .IncomeSharingHeader-main__left-list-item--text {
+        font-size: 16px;
+    }
+    .IncomeSharingHeader-main__left-buttons--button-enroll{
+        width: 150px;
+        padding: 15px;
+    }
+    .IncomeSharingHeader-main__left-buttons--button-knowmore {
+        width: 170px;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .IncomeSharingHeader-main {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        flex-direction: column;
+        background: none;
+        background-image: none!important;
+    }
+    .IncomeSharingHeader{
+        background-color: rgb(253, 240, 215);
+    }
+    .IncomeSharingHeader-main__right--img {
+        display: block;
+    }
+    .IncomeSharingHeader-main__right {
+        background: none;
+        width: 100%;
+        height: 100%;
+    }
+    .IncomeSharingHeader-main__left {
+        width: 100%;
+        padding: 20px;
+    }
+    .IncomeSharingHeader-main__left-list-item {
+        margin-bottom: -19px;
+    }
+    .IncomeSharingHeader-main__left-list {
+        margin: 9px 0;
+    }
+}
+
+@media screen  and (max-width: 390px) {
+    .IncomeSharingHeader-main__left-buttons--button-enroll {
+        width: 130px;
+        padding: 15px;
+    }
+    .IncomeSharingHeader-main__left-buttons--button-knowmore {
+        width: 133px;
+        padding: 0px;
+    }
+}
