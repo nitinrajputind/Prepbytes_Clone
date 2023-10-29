@@ -1,0 +1,65 @@
+.carsual {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.carsual h4 {
+    color: rgba(10, 45, 71, .9294117647058824);
+    font-size: 18px;
+}
+
+.carsual img {
+    height: 90px;
+    width: 90px;
+    margin-right: 30px;
+
+}
+
+
+.conatiner {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.carsual-container {
+    background: #fff 0 0 no-repeat padding-box;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, .1607843137254902);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, .0784313725490196);
+    padding: 30px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 70%;
+    flex: 0 0 70%;
+    margin: 10px;
+    min-height: 360px;
+    border-radius: 16px;
+    height: 400px;
+}
+
+.carsual-container p {
+    text-align: justify;
+    font-size: 15px;
+    color: rgba(106, 127, 134, .9294117647058824);
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 850px) {
+    .carsual-container {
+        width: 300px;
+        display: block;
+        padding-right: 20px;
+        margin: auto;
+        margin-top: 40px;
+    }
+
+}
+
+.StackMetrics {
+    max-width: 1280px;
+    margin: 50px auto;
+}
+.StackMetrics--img {
+    width: 100%;
+    height: 100%;
+}

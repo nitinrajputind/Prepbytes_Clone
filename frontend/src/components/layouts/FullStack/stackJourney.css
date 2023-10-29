@@ -1,0 +1,211 @@
+.StackJourney {
+    background: #f7f9fb;
+    min-height: 80vh;
+}
+.StackJourney__container {
+    padding: 80px 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.StackJourney__container--heading {
+    text-align: center;
+    color: rgba(10,45,71,.9294117647058824);
+    font-size: 30px;
+}
+.StackJourney__container--text {
+    text-align: center;
+    font-size: 18px;
+    color: rgba(106,127,134,.9294117647058824);
+    width: 60%;
+    margin: 20px auto;
+}
+.StackJourney__main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.StackJourney__main--left {
+    width: 35%;
+    padding-bottom: 30px;
+}
+.StackJourney__main--left-tab-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.StackJourney__main--left-tab-container-tab {
+    padding: 20px;
+    position: relative;
+}
+.StackJourney__main--left-tab-container-tab--circle {
+    width: 90px;
+    height: 90px;
+    font-size: 30px;
+    color: rgba(10,45,71,.9294117647058824);
+    background: #fff;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 100%;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    padding: 7px;
+    border: 5px solid orange;
+    background: #fff content-box;
+    top: -40px;
+    left: -40px;
+    cursor: pointer;
+    z-index: 20;
+}
+.StackJourney__main--left-tab-container-tab--box {
+    cursor: pointer;
+    background: red;
+    height: 84px;
+    display: inline-block;
+    width: 294px;
+    border-radius: 8px;
+    -webkit-box-shadow: 12px 15px 20px 0 rgba(46,61,73,.15);
+    box-shadow: 12px 15px 20px 0 rgba(46,61,73,.15);
+    background: linear-gradient(134deg,rgba(48,35,174,.1),rgba(200,109,215,.1));
+    color: rgba(10,45,71,.9294117647058824);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-left: 20px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    z-index: 10;
+}
+
+
+
+
+.StackJourney__main--right {
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.StackJourney__main--right-content {
+    border-left: 1px solid #dbe2e8;
+    margin-bottom: 50px;
+    padding-left: 40px;
+}
+.StackJourney__main--right-content-heading {
+    color: rgba(10,45,71,.9294117647058824);
+    font-size: 24px;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.StackJourney__main--right-content-heading {
+    color: rgba(10,45,71,.9294117647058824);
+    font-size: 24px;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.list {
+    list-style: none;
+    margin: 0 20px;
+    padding: 3rem 0;
+    border-top: var(--line);
+    border-bottom: var(--line);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.list__item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 45%;
+    flex: 0 0 45%;
+    margin-bottom: .7rem;
+    position: relative;
+    color: #707070;
+}
+.list__item:before {
+    content: "";
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    margin-right: .7rem;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCI+PHBhdGggZD0iTTEzLjI1IDEwTDYuMTA5IDIuNThhLjY5Ny42OTcgMCAwMTAtLjk3OS42OC42OCAwIDAxLjk2OSAwbDcuODMgNy45MDhhLjY5Ny42OTcgMCAwMTAgLjk3OWwtNy44MyA3LjkwOGMtLjI2OC4yNzEtLjcwMS4yNy0uOTY5IDBzLS4yNjgtLjcwNyAwLS45NzlMMTMuMjUgMTB6Ii8+PC9zdmc+);
+    background-size: cover;
+    background-color: rgba(244,163,76,.9294117647058824);
+    -webkit-mask-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCI+PHBhdGggZD0iTTEzLjI1IDEwTDYuMTA5IDIuNThhLjY5Ny42OTcgMCAwMTAtLjk3OS42OC42OCAwIDAxLjk2OSAwbDcuODMgNy45MDhhLjY5Ny42OTcgMCAwMTAgLjk3OWwtNy44MyA3LjkwOGMtLjI2OC4yNzEtLjcwMS4yNy0uOTY5IDBzLS4yNjgtLjcwNyAwLS45NzlMMTMuMjUgMTB6Ii8+PC9zdmc+);
+    -webkit-mask-size: cover;
+    mask-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCI+PHBhdGggZD0iTTEzLjI1IDEwTDYuMTA5IDIuNThhLjY5Ny42OTcgMCAwMTAtLjk3OS42OC42OCAwIDAxLjk2OSAwbDcuODMgNy45MDhhLjY5Ny42OTcgMCAwMTAgLjk3OWwtNy44MyA3LjkwOGMtLjI2OC4yNzEtLjcwMS4yNy0uOTY5IDBzLS4yNjgtLjcwNyAwLS45NzlMMTMuMjUgMTB6Ii8+PC9zdmc+);
+    mask-size: cover;
+    background-image: none;
+    position: absolute;
+    left: -20px;
+    top: 5px;
+}
+.StackJourney__main--right-content-image {
+    padding: 0 200px 20px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.StackJourney__main--right-content-image-img {
+    height: 250px;
+}
+
+.StackJourney__main--left-tab-container-tab--box-active {
+    background: transparent linear-gradient(89deg,rgba(45,111,162,.8862745098039215),rgba(2,9,14,.9294117647058824)) 0 0 no-repeat padding-box;
+    color: #fff;
+}
+
+.StackJourney__main-ipad-content{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .StackJourney__main{
+        display: none;
+    }
+    .StackJourney__main-ipad-content{
+        display: block;
+    }
+    .StackJourney__main--left-tab-container-tab--box {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .StackJourney__main--left-tab-container-tab--circle {
+        left: 40px;
+    }
+    .list {
+        display: block!important;
+        padding-left: 90px!important;
+        padding-right: 80px!important;
+    }
+}

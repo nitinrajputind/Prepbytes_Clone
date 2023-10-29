@@ -1,0 +1,49 @@
+.StackGetInTouch {
+    background: transparent -webkit-gradient(linear,left top,right top,from(rgba(45,111,162,.9294117647058824)),to(rgba(23,56,81,.9294117647058824))) 0 0 no-repeat padding-box;
+    background: transparent linear-gradient(90deg,rgba(45,111,162,.9294117647058824),rgba(23,56,81,.9294117647058824)) 0 0 no-repeat padding-box;
+    padding: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.StackGetInTouch__text {
+    color: #fff;
+    font-size: 21px;
+}
+.StackGetInTouch__button {
+    background: #ff219f 0 0 no-repeat padding-box;
+    border: none;
+    border-radius: 40px;
+    padding: 15px 52px 14px 51px;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    min-width: 220px;
+}
+
+@media screen and (max-width: 48rem) {
+    .StackGetInTouch__text {
+        font-size: 18px;
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 30rem){
+    .StackGetInTouch {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        text-align: center;
+    }
+    .StackGetInTouch__text {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+}

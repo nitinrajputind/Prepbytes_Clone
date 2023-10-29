@@ -1,0 +1,133 @@
+.FullStack_batch-details {
+    scroll-margin-top: 150px;
+}
+.BatchDetails__section_main_container {
+    z-index: 500;
+    /* width: 100%; */
+    border: .5px solid #c2c2c2;
+    background: #f7f7f7 0 0 no-repeat padding-box;
+    box-sizing: content-box;
+}
+.BatchDetails__section_container {
+    max-width: 1366px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0 0;
+}
+.BatchDetails__heading {
+    margin-left: 10px;
+    width: 150px;
+    font-size: 16px;
+    color: #707070;
+    font-weight: 700;
+}
+.BatchDetails__section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.BatchComponent__date_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.BatchComponent_radio_buttons {
+    background: #fff 0 0 no-repeat padding-box;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 5px;
+    width: 225px;
+    height: 65px;
+}
+.BatchComponent_radio_buttons_shadow {
+    box-shadow: 0 0 20px rgba(0,0,0,.1607843137254902);
+}
+.BatchComponent_radio_label {
+    display: flex;
+    cursor: pointer;
+}
+input[type=radio] {
+    display: inline!important;
+    width: 18px!important;
+    height: 18px!important;
+    position: relative;
+    top: 10px;
+}
+.BatchComponent__radio_text_container {
+    width: 100%;
+    padding-top: 5px;
+    padding-left: 10px;
+
+    display: inline-block;
+    letter-spacing: 1.3px;
+    font-weight: 400;
+}
+
+.BatchComponent__radio_batch_start_date {
+    font-size: 17px;
+    position: relative;
+}
+.BatchComponent__reg_end_date {
+    color: #f78077;
+    font-size: 11px;
+    margin-top: 10px;
+}
+.BatchComponent__reg_end_date i {
+    font-style: normal;
+}
+.BatchDetails__enrollNow_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+}
+.BatchDetails__actual_priceamount_no_discount {
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    color: #f78077;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.BatchDetails__cta_container {
+    display: flex;
+    justify-content: space-between;
+}
+.BatchDetails__enroll_now_button {
+    background: #f78077 0 0 no-repeat padding-box;
+    border-radius: 6px;
+    border: none;
+    min-width: 130px;
+    padding: 10px;
+    color: #fffaf0;
+    font-size: 15px;
+    cursor: pointer;
+}
+.BatchDetails__try_free_button {
+    background: #00a5ec 0 0 no-repeat padding-box;
+    border-radius: 6px;
+    border: none;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #f7f7f7;
+    min-width: 80px;
+    margin-left: 5%;
+    cursor: pointer;
+    padding: 10px;
+    width: 105px;
+}
+
+@media screen and (max-width: 768px) {
+    .BatchComponent_radio_buttons {
+        margin: 10px!important;
+    }
+    .BatchDetails__section_container {
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,96 @@
+.StackIntern__main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.StackIntern__main__left {
+    width: 50%;
+    padding: 10px 50px;
+}
+.StackIntern__main__left--heading {
+    color: rgba(10,45,71,.9294117647058824);
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+.StackIntern__main__left--box {
+    font-family: Poppins,sans-serif;
+    font-weight: 500;
+}
+.StackIntern__main__left--box-two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.StackIntern__main__left--box-two--icon-container {
+    margin-left: 55px;
+}
+.StackIntern__main__left--box-two--text-container {
+    width: 50%;
+    text-align: center;
+}
+.StackIntern__main__left--box-two--text-container--text {
+    color: rgba(72,55,55,.9294117647058824);
+    margin-right: 25px;
+}
+
+
+
+
+.StackIntern__main__right {
+    width: 50%;
+    padding: 10px 50px 50px;
+    background: rgba(244,163,76,.9294117647058824);
+}
+.StackIntern__main__right--heading {
+    color: rgba(10,45,71,.9294117647058824);
+    font-size: 24px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.StackIntern__main__right--text {
+    color: hsla(0,0%,100%,.9294117647058824);
+    text-align: center;
+}
+.StackIntern__main__right--image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 30px;
+    padding: 0 40px;
+}
+.StackIntern__main__right--image-img {
+    width: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .StackIntern__main {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .StackIntern__main__left {
+        width: 100%;
+        padding: 0 0 80px;
+    }
+    .StackIntern__main__right {
+        width: 100%;
+        padding: 0 0 50px;
+    }
+}

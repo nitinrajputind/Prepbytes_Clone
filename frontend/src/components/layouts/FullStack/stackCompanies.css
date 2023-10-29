@@ -1,0 +1,85 @@
+.StackCompanies {
+    background: #f7f9fb;
+}
+.StackCompanies__main {
+    max-width: 1280px;
+    margin: 0 auto;
+    min-height: 75vh;
+    padding-bottom: 80px;
+}
+.StackCompanies__main--heading {
+    text-align: center;
+    padding-top: 70px;
+    margin-bottom: 70px;
+    color: rgba(10,45,71,.9294117647058824);
+    font-size: 30px;
+}
+.StackCompanies__main--container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.StackCompanies__main--container-card {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 21em;
+    flex: 0 0 21em;
+    margin: 30px auto;
+    padding: 15px 30px;
+    background-color: #fff;
+    position: relative;
+    background: transparent -webkit-gradient(linear,left top,left bottom,from(#d0dee9),to(#fff)) 0 0 no-repeat padding-box;
+    background: transparent linear-gradient(180deg,#d0dee9,#fff) 0 0 no-repeat padding-box;
+    -webkit-box-shadow: 0 10px 30px rgba(208,222,233,.41568627450980394);
+    box-shadow: 0 10px 30px rgba(208,222,233,.41568627450980394);
+    border-radius: 10px;
+}
+.StackCompanies__main--container-card--heading {
+    color: rgba(10,45,71,.9294117647058824);
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+.StackCompanies__main--container-card--text {
+    color: rgba(106,127,134,.9294117647058824);
+    text-align: center;
+    margin-bottom: 50px;
+}
+.StackCompanies__main--container-card-companies {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.StackCompanies__main--container-card-companies--middle, .StackCompanies__main--container-card-companies--top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+.StackCompanies__main--container-card-companies--top {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: relative;
+}
+.StackCompanies__main--container-card-companies--middle {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.StackCompanies__main--container-card-companies--bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    margin: 5px 0;
+}

@@ -1,0 +1,54 @@
+.StackTools {
+    max-width: 1280px;
+    margin: 0 auto;
+    min-height: 70vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.StackTools__left {
+    width: 50%;
+    padding-right: 50px;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+}
+.StackTools__left--heading {
+    color: rgba(10,45,71,.9294117647058824);
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.StackTools__left--text {
+    text-align: center;
+    color: rgba(106,127,134,.9294117647058824);
+}
+.StackTools__right {
+    width: 50%;
+    margin-top: 50px;
+}
+.StackTools__right--img {
+    width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .StackTools {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .StackTools__left--heading {
+        margin-top: 30px;
+    }
+    .StackTools__left {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+        padding-right: 0;
+    }
+    .StackTools__right {
+        width: 100%;
+        text-align: center;
+    }
+}
