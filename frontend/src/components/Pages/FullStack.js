@@ -12,8 +12,9 @@ import StackIntern from "../layouts/FullStack/StackIntern";
 import StackFees from "../layouts/FullStack/StackFees";
 import Multi_Carousel from "../layouts/FullStack/Multi_Carousel";
 import StackGetInTouch from "../layouts/FullStack/StackGetInTouch";
-import FAQS from "../layouts/ElevationAcademy/FAQS";
-import StackSyllabus from "../layouts/ElevationAcademy/StackSyllabus";
+import StackSyllabus from "../layouts/FullStack/StackSyllabus";
+import FAQS from "../layouts/FullStack/FAQS";
+
 
 const FullStack = () => {
   return (

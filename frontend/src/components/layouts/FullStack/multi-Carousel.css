@@ -43,6 +43,11 @@
     color: rgba(106, 127, 134, .9294117647058824);
     margin-top: 20px;
 }
+.carsual h4 {
+    color: rgba(10, 45, 71, .9294117647058824);
+    font-size: 18px;
+    line-height: 0.9rem;
+}
 
 @media screen and (max-width: 850px) {
     .carsual-container {

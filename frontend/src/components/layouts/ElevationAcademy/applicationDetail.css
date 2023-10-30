@@ -1,0 +1,162 @@
+.Main_Appication_Contanier {
+  background: #e5f4fb;
+}
+
+.apllication-detail {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 80px 0 80px 40px;
+  max-width: 1286px;
+
+}
+
+.inner-conatiner1 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.inner-conatiner1 h2 {
+  color: #3e4041;
+  font-size: 35px;
+  font-weight: 600;
+  width: 80%;
+  line-height: 1.4;
+  margin-bottom: 12px;
+  padding: 1rem;
+}
+
+.inner-conatiner1 p {
+  color: #3e4041;
+  font-size: 16px;
+  margin-bottom: 48px;
+  padding: 1rem;
+  width: 100%;
+}
+
+.inner-conatiner2 {
+  display: flex;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.inner-button {
+  /* width: 100%; */
+  display: flex;
+
+
+
+  border-left: thick solid #f3f3f3;
+  background: #f3f3f3;
+  color: #c2c2c2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 20px;
+  width: 294px;
+  cursor: pointer;
+
+}
+
+.heading-app {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.heading-app img {
+  width: 40px;
+
+  margin-left: 30px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.heading-app p {
+  font-size: 21px;
+}
+
+.inner-conatiner2-detail {
+  width: 50%;
+  background-color: white;
+}
+
+.inner-conatiner2-detail .application h2 {
+  color: #424242;
+  font-size: 30px;
+  font-weight: 600;
+
+
+
+  color: #424242;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 20px 68px;
+
+}
+
+.inner-conatiner2-detail .application p {
+  color: #424242;
+  font-size: 20px;
+  word-wrap: break-word;
+
+
+  margin-left: 10px;
+  margin-bottom: 20px;
+  width: 90%;
+
+}
+
+.inner-conatiner2-detail .application p {
+  display: flex;
+  gap: 10px;
+}
+
+.inner-conatiner2-detail .application h2 {
+  margin-left: 30px;
+}
+
+.inner-conatiner2-detail .application p img {
+  margin-top: 10px;
+  width: 20px;
+  margin-left: 20px;
+  height: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .inner-conatiner1 {
+    flex-direction: column;
+  }
+
+  .inner-conatiner1 h2 {
+    width: 100%;
+  }
+  .inner-conatiner2 {
+    flex-direction: column;
+  }
+  .apllication-detail {
+    padding: 80px 0 80px 0px;
+    margin: auto;
+}
+.buttons {
+  width: 100%;
+}
+.inner-button {
+  width: 100%;
+}
+.inner-conatiner2-detail {
+  width: 100%;
+
+}
+
+
+}

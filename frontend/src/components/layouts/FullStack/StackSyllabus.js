@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import "./stackSyllabus.css";
 import {Link} from  "react-router-dom"
+import "./stackSyllabus.css";
 
 
 const StackSyllabus = () => {
