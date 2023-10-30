@@ -1,426 +1,493 @@
 .syllabus-head {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 800%;
-  }
-  
-  .syllabus-head h2 {
-    color: #3e4041;
-    font-size: 40px;
-    font-weight: 600;
-  }
-  .syllabus-head p {
-    color: #3e4041;
-    font-size: 20px;
-    text-align: center;
-  }
-  
-  .syllabus11 {
-    display: flex;
-    height: 50px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color: white;
-  
-    background-color: rgb(101, 187, 229);
-    justify-content: center;
-    align-items: center;
-  }
-  /* .inner1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 800%;
+}
+
+.syllabus-head h2 {
+  color: #3e4041;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.syllabus-head p {
+  color: #3e4041;
+  font-size: 20px;
+  text-align: center;
+}
+
+.syllabus11 {
+  display: flex;
+  height: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: white;
+
+  background-color: rgb(101, 187, 229);
+  justify-content: center;
+  align-items: center;
+}
+
+/* .inner1 {
     border-top-left-radius: 9px;
     border-left: 10px solid rgb(247, 128, 119);
   } */
-  .h2 {
-    font-size: 30px;
-    padding-top: 20px;
-  
-    display: flex;
-  }
-  .h2 p {
-    height: 48px;
-    border: 4px solid white;
-    width: 48px;
-    border-radius: 10px;
-    margin-bottom: 3px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .collapse1 {
-    /* border-left: 10px solid rgb(247, 128, 119); */
-    border-bottom-left-radius: 10px;
-    border-top: none; /* Remove the top border */
-  }
-  
-  .syllabus12 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background: rgb(247, 128, 119);
-  }
-  .syllabus13 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background: rgb(101, 187, 229);
-  }
-  .syllabus14 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background: rgb(101, 187, 229);
-  }
-  .syllabus15 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background: rgb(247, 182, 67);
-  }
-  .syllabus16 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background: rgb(247, 128, 119);
-  }
-  .syllabus17 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background: rgb(101, 187, 229);
-  }
-  .syllabus18 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background: rgb(247, 182, 67);
-  }
-  
-  .syllabus19 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background: rgb(247, 182, 67);
-  }
-  
-  .syllabus20 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background: rgb(101, 187, 229);
-  }
-  
-  .inner-syllabus1 h2 {
-    margin-left: 15px;
-    font-size: 21px;
-    color: #424242;
-    font-weight: 600;
-  }
-  
-  .syllabues {
-    width: 80%;
-    display: block;
-    margin: auto;
-  }
-  
-  .inner-syllabus1 {
-    display: flex;
-    border-top-left-radius: 6px;
-    align-items: flex-end;
-    margin-top: 10px;
-    border-top: 1px solid gray;
-    /* margin-bottom: 10px; */
-    border-right: 1px solid gray;
-  
-    /* border: 2px solid gray; */
-    justify-content: space-between;
-    padding: 12px 20px;
+.h2 {
+  font-size: 30px;
+  padding-top: 20px;
+
+  display: flex;
+}
+
+.h2 p {
+  height: 48px;
+  border: 4px solid white;
+  width: 48px;
+  border-radius: 10px;
+  margin-bottom: 3px;
+  display: flex;
+  justify-content: center;
+}
+
+.collapse1 {
+  /* border-left: 10px solid rgb(247, 128, 119); */
+  border-bottom-left-radius: 10px;
+  border-top: none;
+  /* Remove the top border */
+}
+
+.syllabus12 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: rgb(247, 128, 119);
+}
+
+.syllabus13 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: rgb(101, 187, 229);
+}
+
+.syllabus14 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: rgb(101, 187, 229);
+}
+
+.syllabus15 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: rgb(247, 182, 67);
+}
+
+.syllabus16 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: rgb(247, 128, 119);
+}
+
+.syllabus17 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: rgb(101, 187, 229);
+}
+
+.syllabus18 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: rgb(247, 182, 67);
+}
+
+.syllabus19 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: rgb(247, 182, 67);
+}
+
+.syllabus20 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: rgb(101, 187, 229);
+}
+
+.inner-syllabus1 h2 {
+  margin-left: 15px;
+  font-size: 21px;
+  color: #424242;
+  font-weight: 600;
+}
+
+.syllabues {
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+
+.inner-syllabus1 {
+  display: flex;
+  border-top-left-radius: 6px;
+  align-items: flex-end;
+  margin-top: 10px;
+  border-top: 1px solid gray;
+  /* margin-bottom: 10px; */
+  border-right: 1px solid gray;
+
+  /* border: 2px solid gray; */
+  justify-content: space-between;
+  padding: 12px 20px;
 
 
-    border: 0.25px solid hsla(0,0%,43.9%,.2);
+  border: 0.25px solid hsla(0, 0%, 43.9%, .2);
 
 
 
-  }
-  
-  .sylbutton {
-    background: #e8f7ed;
-    color: rgb(247, 128, 119);
-    border: none;
-  
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-  }
-  .card-body {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 10px;
-    border-top: none;
-    margin-top: -18px;
-  
-    /* border-bottom: 1.5px solid gray; */
-    justify-content: space-evenly;
-    flex-direction: row;
-    /* gap: 20px; */
-  }
-  .orderlist ol {
-    list-style: none;
-  }
-  .orderlist1 ol {
-    list-style: none;
-  }
-  
-  .porject-cart {
-    display: flex;
-    gap: 20px;
-  
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .porject-cart .project1 {
-    width: 370px;
-    padding: 20px;
+}
+
+.sylbutton {
+  background: #e8f7ed;
+  color: rgb(247, 128, 119);
+  border: none;
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.card-body {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  border-top: none;
+  margin-top: -18px;
+
+  /* border-bottom: 1.5px solid gray; */
+  justify-content: space-evenly;
+  flex-direction: row;
+  /* gap: 20px; */
+}
+
+.orderlist ol {
+  list-style: none;
+}
+
+.orderlist1 ol {
+  list-style: none;
+}
+
+.porject-cart {
+  display: flex;
+  gap: 20px;
+
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.porject-cart .project1 {
+  width: 370px;
+  padding: 20px;
+  text-align: center;
+  height: 448px;
+  background: transparent linear-gradient(180deg, #d0dee9, #fff) 0 0 no-repeat padding-box;
+  -webkit-box-shadow: 0 10px 30px rgba(208, 222, 233, 0.41568627450980394);
+  box-shadow: 0 10px 30px rgba(208, 222, 233, 0.41568627450980394);
+  border-radius: 10px;
+}
+
+.porject-cart .project1 h2 {
+  color: rgba(10, 45, 71, .9294117647058824);
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+.porject-cart .project1 p{
+    color: rgba(106,127,134,.9294117647058824);
     text-align: center;
-    height: 380px;
-    background: transparent linear-gradient(180deg, #d0dee9, #fff) 0 0 no-repeat
-      padding-box;
-    -webkit-box-shadow: 0 10px 30px rgba(208, 222, 233, 0.41568627450980394);
-    box-shadow: 0 10px 30px rgba(208, 222, 233, 0.41568627450980394);
-    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.syllabus-detail .inner-syllabus1 h2 {
+  margin-left: 15px;
+  font-size: 21px;
+  color: #424242;
+  font-weight: 600;
+}
+
+.heading-project {
+  width: 80%;
+  margin: auto;
+  padding: 90px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  display: flex;
+}
+
+.inner-heading-project1 p {
+  color: rgba(106, 127, 134, 0.9294117647058824);
+}
+
+.inner-heading-project2 button {
+  background: transparent;
+  -webkit-box-shadow: 0 3px 6px rgba(95, 141, 196, 0.2);
+  box-shadow: 0 3px 6px rgba(95, 141, 196, 0.2);
+  border-radius: 5px;
+  color: #ff219f;
+  border: 1px solid #ff219f;
+  /* width: 200px; */
+  height: 60px;
+  font-weight: 400;
+  cursor: pointer;
+  text-align: center;
+  font-size: 18px;
+}
+
+.orderlist1 {
+  border-left-color: rgb(101, 187, 229);
+  width: 100%;
+}
+
+.orderlist1 p {
+  width: 95%;
+  display: block;
+  margin: auto;
+  margin: 30px 5px;
+  padding: 15px;
+  background: #e8f7ed;
+}
+
+.orderlist1 ol {
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.orderlist1 ol li {
+  height: 40px;
+  color: #858585;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border: 1px solid red;
+  border-color: rgb(101, 187, 229);
+}
+
+/* -------------------transition--------------------------- */
+
+.collapse1 {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.collapse1.open {
+  max-height: 500px;
+  /* Adjust the maximum height to suit your content */
+  transition: max-height 0.5s ease-in-out;
+  /* Longer duration for a smoother effect */
+  animation-name: expand;
+  animation-duration: 0.5s;
+}
+
+@keyframes expand {
+  from {
+    max-height: 0px;
   }
-  .syllabus-detail .inner-syllabus1 h2 {
-    margin-left: 15px;
-    font-size: 21px;
-    color: #424242;
-    font-weight: 600;
+
+  to {
+    max-height: 500px;
+    /* Adjust to match your content's height */
   }
-  
-  .heading-project {
-    width: 80%;
-    margin: auto;
-    padding: 90px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  
-    display: flex;
+}
+
+-------------------- .collapse2 {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.collapse2.open {
+  max-height: 500px;
+  /* Adjust the maximum height to suit your content */
+  transition: max-height 0.5s ease-in-out;
+  /* Longer duration for a smoother effect */
+  animation-name: expand;
+  animation-duration: 0.5s;
+}
+
+@keyframes expand {
+  from {
+    max-height: 0px;
   }
-  
-  .inner-heading-project1 p {
-    color: rgba(106, 127, 134, 0.9294117647058824);
+
+  to {
+    max-height: 500px;
+    /* Adjust to match your content's height */
   }
-  .inner-heading-project2 button {
-    background: transparent;
-    -webkit-box-shadow: 0 3px 6px rgba(95, 141, 196, 0.2);
-    box-shadow: 0 3px 6px rgba(95, 141, 196, 0.2);
-    border-radius: 5px;
-    color: #ff219f;
-    border: 1px solid #ff219f;
-    /* width: 200px; */
-    height: 60px;
-    font-weight: 400;
-    cursor: pointer;
-    text-align: center;
-    font-size: 18px;
-  }
-  
-  .orderlist1 {
-    border-left-color: rgb(101, 187, 229);
-    width: 100%;
-  }
-  
-  .orderlist1 p {
-    width: 95%;
-    display: block;
-    margin: auto;
-    margin: 30px 5px;
-    padding: 15px;
-    background: #e8f7ed;
-  }
-  
-  .orderlist1 ol {
-    display: flex;
-    justify-content: left;
-    gap: 10px;
-    flex-wrap: wrap;
-  }
-  .orderlist1 ol li {
-    height: 40px;
-    color: #858585;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    border: 1px solid red;
-    border-color: rgb(101, 187, 229);
-  }
-  
-  /* -------------------transition--------------------------- */
-  
-  .collapse1 {
-    overflow: hidden;
+}
+
+-------------------- .collapse3 {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.collapse3.open {
+  max-height: 500px;
+  /* Adjust the maximum height to suit your content */
+  transition: max-height 0.5s ease-in-out;
+  /* Longer duration for a smoother effect */
+  animation-name: expand;
+  animation-duration: 0.5s;
+}
+
+@keyframes expand {
+  from {
     max-height: 0;
-    transition: max-height 0.3s ease-in-out;
   }
-  
-  .collapse1.open {
-    max-height: 500px; /* Adjust the maximum height to suit your content */
-    transition: max-height 0.5s ease-in-out; /* Longer duration for a smoother effect */
-    animation-name: expand;
-    animation-duration: 0.5s;
+
+  to {
+    max-height: 500px;
+    /* Adjust to match your content's height */
   }
-  
-  @keyframes expand {
-    from {
-      max-height: 0px;
-    }
-    to {
-      max-height: 500px; /* Adjust to match your content's height */
-    }
-  }
-  -------------------- .collapse2 {
-    overflow: hidden;
+}
+
+-------------------- .collapse4 {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.collapse5.open {
+  max-height: 500px;
+  /* Adjust the maximum height to suit your content */
+  transition: max-height 0.5s ease-in-out;
+  /* Longer duration for a smoother effect */
+  animation-name: expand;
+  animation-duration: 0.5s;
+}
+
+@keyframes expand {
+  from {
     max-height: 0;
-    transition: max-height 0.3s ease-in-out;
   }
-  
-  .collapse2.open {
-    max-height: 500px; /* Adjust the maximum height to suit your content */
-    transition: max-height 0.5s ease-in-out; /* Longer duration for a smoother effect */
-    animation-name: expand;
-    animation-duration: 0.5s;
+
+  to {
+    max-height: 500px;
+    /* Adjust to match your content's height */
   }
-  
-  @keyframes expand {
-    from {
-      max-height: 0px;
-    }
-    to {
-      max-height: 500px; /* Adjust to match your content's height */
-    }
-  }
-  -------------------- .collapse3 {
-    overflow: hidden;
+}
+
+-------------------- .collapse6 {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.collapse6.open {
+  max-height: 500px;
+  /* Adjust the maximum height to suit your content */
+  transition: max-height 0.5s ease-in-out;
+  /* Longer duration for a smoother effect */
+  animation-name: expand;
+  animation-duration: 0.5s;
+}
+
+@keyframes expand {
+  from {
     max-height: 0;
-    transition: max-height 0.3s ease-in-out;
   }
-  
-  .collapse3.open {
-    max-height: 500px; /* Adjust the maximum height to suit your content */
-    transition: max-height 0.5s ease-in-out; /* Longer duration for a smoother effect */
-    animation-name: expand;
-    animation-duration: 0.5s;
+
+  to {
+    max-height: 500px;
+    /* Adjust to match your content's height */
   }
-  
-  @keyframes expand {
-    from {
-      max-height: 0;
-    }
-    to {
-      max-height: 500px; /* Adjust to match your content's height */
-    }
-  }
-  -------------------- .collapse4 {
-    overflow: hidden;
+}
+
+-------------------- .collapse7 {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.collapse7.open {
+  max-height: 500px;
+  /* Adjust the maximum height to suit your content */
+  transition: max-height 0.5s ease-in-out;
+  /* Longer duration for a smoother effect */
+  animation-name: expand;
+  animation-duration: 0.5s;
+}
+
+@keyframes expand {
+  from {
     max-height: 0;
-    transition: max-height 0.3s ease-in-out;
   }
-  
-  .collapse5.open {
-    max-height: 500px; /* Adjust the maximum height to suit your content */
-    transition: max-height 0.5s ease-in-out; /* Longer duration for a smoother effect */
-    animation-name: expand;
-    animation-duration: 0.5s;
+
+  to {
+    max-height: 500px;
+    /* Adjust to match your content's height */
   }
-  
-  @keyframes expand {
-    from {
-      max-height: 0;
-    }
-    to {
-      max-height: 500px; /* Adjust to match your content's height */
-    }
-  }
-  -------------------- .collapse6 {
-    overflow: hidden;
+}
+
+-------------------- .collapse8 {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.collapse8.open {
+  max-height: 500px;
+  /* Adjust the maximum height to suit your content */
+  transition: max-height 0.5s ease-in-out;
+  /* Longer duration for a smoother effect */
+  animation-name: expand;
+  animation-duration: 0.5s;
+}
+
+@keyframes expand {
+  from {
     max-height: 0;
-    transition: max-height 0.3s ease-in-out;
   }
-  
-  .collapse6.open {
-    max-height: 500px; /* Adjust the maximum height to suit your content */
-    transition: max-height 0.5s ease-in-out; /* Longer duration for a smoother effect */
-    animation-name: expand;
-    animation-duration: 0.5s;
+
+  to {
+    max-height: 500px;
+    /* Adjust to match your content's height */
   }
-  
-  @keyframes expand {
-    from {
-      max-height: 0;
-    }
-    to {
-      max-height: 500px; /* Adjust to match your content's height */
-    }
-  }
-  -------------------- .collapse7 {
-    overflow: hidden;
+}
+
+.collapse9 {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.collapse9.open {
+  max-height: 500px;
+  /* Adjust the maximum height to suit your content */
+  transition: max-height 0.5s ease-in-out;
+  /* Longer duration for a smoother effect */
+  animation-name: expand;
+  animation-duration: 0.5s;
+}
+
+@keyframes expand {
+  from {
     max-height: 0;
-    transition: max-height 0.3s ease-in-out;
   }
-  
-  .collapse7.open {
-    max-height: 500px; /* Adjust the maximum height to suit your content */
-    transition: max-height 0.5s ease-in-out; /* Longer duration for a smoother effect */
-    animation-name: expand;
-    animation-duration: 0.5s;
+
+  to {
+    max-height: 500px;
+    /* Adjust to match your content's height */
   }
-  
-  @keyframes expand {
-    from {
-      max-height: 0;
-    }
-    to {
-      max-height: 500px; /* Adjust to match your content's height */
-    }
-  }
-  -------------------- .collapse8 {
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.3s ease-in-out;
-  }
-  
-  .collapse8.open {
-    max-height: 500px; /* Adjust the maximum height to suit your content */
-    transition: max-height 0.5s ease-in-out; /* Longer duration for a smoother effect */
-    animation-name: expand;
-    animation-duration: 0.5s;
-  }
-  
-  @keyframes expand {
-    from {
-      max-height: 0;
-    }
-    to {
-      max-height: 500px; /* Adjust to match your content's height */
-    }
-  }
-  
-  .collapse9 {
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.3s ease-in-out;
-  }
-  
-  .collapse9.open {
-    max-height: 500px; /* Adjust the maximum height to suit your content */
-    transition: max-height 0.5s ease-in-out; /* Longer duration for a smoother effect */
-    animation-name: expand;
-    animation-duration: 0.5s;
-  }
-  
-  @keyframes expand {
-    from {
-      max-height: 0;
-    }
-    to {
-      max-height: 500px; /* Adjust to match your content's height */
-    }
-  }
-  
+}
 
 
 
-.bg-Color{
+
+.bg-Color {
   background: #f6f8ff;
 }

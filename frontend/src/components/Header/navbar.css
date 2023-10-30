@@ -21,6 +21,7 @@
   display: flex;
   gap: 5px;
   justify-content: flex-end;
+  min-height: 20px;
 }
 .auth .login {
   width: 100px;
@@ -96,6 +97,31 @@ ul {
 .hamburger {
   display: none;
 }
+
+.username{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+}
+.username h4{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #0097e6;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.username p{
+  color: #0097e6;
+  font-size: 16px;
+}
+
+
+
 
 
 /* ------------------------------------media query------------------------------------------ */

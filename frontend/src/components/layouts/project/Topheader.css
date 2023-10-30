@@ -1,0 +1,44 @@
+.flex-block {
+    display: flex;
+    flex-direction: column;
+    background: url(https://blog.prepbytes.com/wp-content/uploads/2019/11/Header_Final-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 51px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+.site-header.data-bg .middlebar-items {
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+.site-branding {
+    margin-right: 20px;
+    width: 400px;
+}
+.site-branding .site-title {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 auto 10px;
+}
+.site-description {
+    margin: 0 auto;
+    position: relative;
+    font-size: 14px;
+    color: #282828;
+}
+
+@media screen and (max-width: 480px) {
+    .flex-block {
+        padding: 23px 10%;
+    }
+    .site-branding {
+        margin-right: 0px;
+        width: inherit;
+    }
+    .site-branding .site-title {
+        font-size: 24px;
+        font-weight: 700;
+    }
+}

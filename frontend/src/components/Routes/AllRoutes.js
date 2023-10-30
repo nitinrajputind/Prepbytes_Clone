@@ -1,5 +1,6 @@
+/* eslint-disable no-unused-vars */
 import React from 'react'
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes, useNavigate } from 'react-router-dom'
 import Navbar from '../Header/Navbar'
 import Home from '../Pages/Home'
 import Mock from '../Pages/Mock'
@@ -10,12 +11,25 @@ import FullStack from '../Pages/FullStack'
 import ElevationAcademy from '../Pages/ElevationAcademy'
 import Login from '../LoginAndSingup/Login'
 import SignUp from '../LoginAndSingup/SignUp'
+import Html from '../Pages/Project/Html'
+import Css from '../Pages/Project/Css'
+import Javascript from '../Pages/Project/Javascript'
+import MongoDB from '../Pages/Project/MongoDB'
+import Node from '../Pages/Project/Node'
+import ReactJS from '../Pages/Project/ReactJS'
 
 
 const AllRoutes = () => {
+
+  const navigate = useNavigate();
+
+  const ShouldShowNavbarAndFooter=()=>{
+    const currentPath = window.location.pathname
+    return !(currentPath === "/dashboard" || currentPath === "/cancel")
+  }
   return (
     <div>
-      <Navbar/>
+      {ShouldShowNavbarAndFooter() && <Navbar/>}
 
       <Routes>
         <Route path='/' element={<Home/>}/>
@@ -24,11 +38,22 @@ const AllRoutes = () => {
         <Route path='/master-competitive-programming' element={<MasterCompetative/>}/>
         <Route path='/online-full-stack-developer-mern-certification-program' element={<FullStack/>}/>
         <Route path='/elevation-academy' element={<ElevationAcademy/>}/>
+        <Route path='/HTML_Project' element={<Html/>}/>
+        <Route path='/CSS_Project' element={<Css/>}/>
+        <Route path='/JavaScript_Project' element={<Javascript/>}/>
+        <Route path='/ReactJs_Project' element={<ReactJS/>}/>
+        <Route path='/Node_Project' element={<Node/>}/>
+        <Route path='/MongoDB_Project' element={<MongoDB/>}/>
+
+
+
+
         <Route path='/login' element={<Login/>}/>
         <Route path='/signUp' element={<SignUp/>}/>
-      </Routes>
 
-      <Footer/>
+      </Routes>
+      
+      {ShouldShowNavbarAndFooter() && <Footer/>}
     </div>
   )
 }
