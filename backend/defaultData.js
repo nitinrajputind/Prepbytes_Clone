@@ -1,7 +1,6 @@
 const mockdata = require("./constant/Mock")
 const MOCKS = require("./model/mockSchema")
 
-
 const defaultData = async ()=>{
     try{
         await MOCKS.deleteMany({})

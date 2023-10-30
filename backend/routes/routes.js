@@ -6,7 +6,6 @@ const routes = require("express").Router();
 
 // MOCK Test
 routes.get('/mocktest', mocktest)
-
 // register User
 routes.post("/register", register)
 

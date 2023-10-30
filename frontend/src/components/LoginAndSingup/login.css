@@ -1,0 +1,219 @@
+.SignIn {
+  background-image: url(https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/blue-background.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  font-family: Inter;
+}
+
+.signup-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.SignIn__container--left {
+  width: 87%;
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+.SignIn__container-left {
+  width: 71%;
+}
+
+.SignIn__container-left-img {
+  width: 100%;
+}
+
+
+
+.SigninAchievements {
+  width: 215px;
+  border: 1px solid #fff;
+  background-color: #fff;
+  margin-top: 40px;
+  padding-bottom: 8px;
+  border-radius: 5px;
+  text-align: center;
+  height: fit-content;
+}
+
+.SigninAchievements__image {
+  height: 75px !important;
+  width: auto !important;
+  margin-bottom: -15px;
+  margin-top: -35px;
+}
+
+.SigninAchievements__container {
+  margin: 18px 8px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+}
+
+.SigninAchievements__container-img {
+  width: auto !important;
+  height: 50px !important;
+}
+
+.SigninAchievements__container-detail {
+  text-align: initial;
+  color: #423c3c;
+}
+
+.SigninAchievements__container-detail-count {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: -7px;
+}
+
+.SigninAchievements__container-detail-title {
+  font-size: 14px;
+}
+
+.SignIn__container--right {
+  width: 50%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .1607843137254902);
+  border-radius: 10px;
+  margin: 50px 40px 175px;
+  background-color: #fffffe;
+}
+
+.SignIn__container--right-top {
+  position: relative;
+}
+
+.SignIn__container--right-top-links {
+  height: 75px;
+  background: #fff;
+  margin: 0 3%;
+  padding: 10px 9% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+.SignIn__container--right-top-links-linkone {
+  width: 50%;
+  background: #fff;
+  text-align: center;
+  padding-top: 35px;
+  border-bottom: .5px solid #4a8ce5;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.SignIn__container--right-top-links-linkone a {
+  text-decoration: none;
+  color: #6b6f70;
+}
+
+.SignIn__container--right-top-links-linktwo {
+  width: 50%;
+  color: #4a8ce5;
+  font-weight: 600;
+  border-bottom: 3px solid #4a8ce5;
+  background: #fff;
+  text-align: center;
+  padding-top: 35px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.SignIn__container--right-top-links-linktwo a {
+  text-decoration: none;
+  color: #4b8ce8;
+}
+
+.SignIn__container--right-form--container {
+  padding: 8px 50px 50px;
+}
+
+.SignIn__container--right-form--container-top {
+  text-align: center;
+}
+
+.SignIn__container--right-form--container-top--title {
+  color: #767779;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.SignIn__container--right-form--container-middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1024px) {
+  .signup-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .SignIn__container-left {
+    width: 44%;
+  }
+
+  .SigninAchievements__image {
+    display: none;
+  }
+
+  .SigninAchievements {
+    display: flex;
+    width: 566px;
+    margin-top: -12px;
+  }
+
+  .SignIn__container--left,
+  .SignIn__container--left-mentor {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0;
+    padding-top: 10px;
+  }
+
+  .SignIn__container--right {
+    width: 82%;
+    margin-top: 18px;
+    padding: 22px 40px;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width:617px) {
+  .SignIn__container-left-img {
+    display: none;
+  }
+
+  .SigninAchievements {
+    width: 81%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 14px;
+  }
+
+  .SignIn__container--right {
+    padding: 0 15px 15px;
+  }
+
+  .user-info1 button {
+    min-height: 40px;
+  }
+}

@@ -161,3 +161,65 @@
     text-decoration: none;
     border: none;
 }
+
+
+
+
+
+/* Test Card2 Styling */
+
+.TopicMockTestCard {
+    width: 11em;
+    padding: 10px;
+    background: transparent linear-gradient(180deg,#c4dcf9,#fff 54%,#fff) 0 0 no-repeat padding-box;
+    -webkit-box-shadow: 0 10px 30px rgba(95,141,196,.2);
+    box-shadow: 0 10px 30px rgba(95,141,196,.2);
+    border-radius: 5px;
+    color: #707070;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.TopicMockTestCard__image {
+    text-align: center;
+    margin: 10px 0;
+}
+.TopicMockTestCard__image--img {
+    height: 80px;
+    width: 100px;
+}
+.TopicMockTestCard__heading {
+    text-align: center;
+    color: #3969ad;
+    font-weight: 500;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    font-size: 16px;
+}
+.TopicMockTestCard__bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 5px;
+}
+.TopicMockTestCard__bottom--button {
+    background: #22559c;
+    -webkit-box-shadow: 0 3px 6px rgba(95,141,196,.2);
+    box-shadow: 0 3px 6px rgba(95,141,196,.2);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 11px 33.7px;
+    font-size: 16px;
+    color: #fff;
+    margin: 10px 0;
+    text-decoration: none;
+    border: none;
+}
+

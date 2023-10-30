@@ -1,0 +1,92 @@
+.Register__container--right-top-links-linkone {
+  width: 50%;
+  color: #4a8ce5;
+  font-weight: 600;
+  border-bottom: 3px solid #4a8ce5;
+  background: #fff;
+  text-align: center;
+  padding-top: 35px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.Register__container--right-top-links-linktwo {
+  width: 50%;
+  background: #fff;
+  text-align: center;
+  padding-top: 35px;
+  border-bottom: .5px solid #4a8ce5;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.Register__container--right-top-links-linkone a {
+  text-decoration: none;
+  color: #4b8ce8;
+}
+.Register__container--right-top-links-linktwo a {
+  text-decoration: none;
+  color: #6b6f70;
+}
+
+.user-info {
+  border-bottom: 1px solid gray;
+  display: flex;
+  width: 91%;
+  margin: auto;
+  flex-direction: column;
+}
+
+.signup-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.user-info input[type="text"] {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.college-detail {
+  width: 100%;
+  margin: auto;
+  display: flex;
+}
+
+.college-detail .user-info {
+  width: 40%;
+  justify-content: left;
+}
+
+select {
+  border: none;
+}
+
+.term input[type=radio] {
+  margin-bottom: 9px;
+  font-size: large;
+}
+
+.term {
+  display: flex;
+  gap: 10px;
+  padding-left: 13px;
+  align-items: last baseline;
+}
+
+.user-info1 {
+  margin-bottom: 10px;
+}
+
+.user-info1 button {
+  width: 70%;
+  border-radius: 9px;
+  height: 40px;
+  color: white;
+  display: block;
+
+  margin: auto;
+  border: none;
+  background: transparent linear-gradient(180deg, #4b8ce8, #4b8ce8) 0 0 no-repeat padding-box;
+}

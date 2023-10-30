@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import TestCard from '../layouts/Mock/TestCard'
+import TestCard2 from '../layouts/Mock/TestCard2'
 
 
 const Mock = () => {
 
     const[mockData, SetMockData] = useState([])
 
+    // url = https://prepbytes-clone.onrender.com
     useEffect(()=>{
-        axios.get('https://prepbytes-clone.onrender.com/mocktest')
+        axios.get('http://localhost:8080/mocktest')
         .then((response)=>{
             // console.log(response);
             SetMockData(response.data)
@@ -46,7 +48,7 @@ const Mock = () => {
                             {/* test Card Render Here */}
                             <div className="FeaturedMockTestList__main-container--past-mocktest">
                                 {
-                                    mockData && mockData.map((item, index)=>{
+                                    mockData && mockData.filter((item)=>item.id >=0 && item.id <=11).map((item, index)=>{
                                         return(
                                             <TestCard
                                             id = {item.id}
@@ -69,6 +71,51 @@ const Mock = () => {
             </div>
 
         </div>
+
+
+
+        <div className="FeaturedMockTestList">
+            <div className="FeaturedMockTestList__main">
+
+                <p className='FeaturedMockTestList__main--heading'>Practice Tests</p>
+                
+                <div className="FeaturedMockTestList__main-container">
+                    <div className="FeaturedMockTestList__main-container--past">
+                        <div className="FeaturedMockTestList__main-container--past-heading">
+                            <p>Topic Wise</p>
+
+                            {/* test Card Render Here */}
+                            <div className="FeaturedMockTestList__main-container--past-mocktest">
+                                {
+                                    mockData && mockData.filter((item)=> item.id>11 && item.id <=20).map((item, index)=>{
+                                        return(
+                                            <TestCard2 
+                                            img = {item.img}
+                                            name = {item.name}
+                                            id = {item.id}
+                                            price = {item.price}
+                                            />
+                                        )
+                                    })
+                                }
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
 </>
   )
 }

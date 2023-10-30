@@ -1,86 +1,76 @@
-const USER = require("../model/userSchema")
-const bcrypt = require("bcrypt")
-const jwt = require("jsonwebtoken")
+const USER = require("../model/userSchema");
+const bcrypt = require("bcrypt");
+const jwt = require("jsonwebtoken");
 
-
-const SecretKey = "SecretKey"
+const SecretKey = "SecretKey";
 const SaltRound = 10;
 
+const register = async (req, res) => {
+  try {
+    const { username, email, password, collegename, passingyear } = req.body;
 
-
-const register = async(req,res)=>{
-    try{
-        const {username , email , password , confirmpassword} = req.body;
-        if(password !== confirmpassword){
-            return res.status(200).send({msg : "Password is not mached"})
-        }
-
-        // Checked if the email is already in use 
-        const existingUser = await USER.findOne({email});
-        if(existingUser){
-            return res.status(200).send({msg : "Email already registered"})
-        }
-
-        // Hash password 
-        const hashedPassword = await bcrypt.hash(password, SaltRound);
-        const hashConfirmPassword = await bcrypt.hash(confirmpassword, SaltRound);
-
-        // create user
-        const user = await USER.create({
-            username : username,
-            email: email,
-            password : hashedPassword,
-            confirmpassword : hashConfirmPassword
-        });
-
-        console.log(user);
-        res.status(200).send({msg : "user registered successfully", user : user});
+    // Check if the email is already in use
+    const existingUser = await USER.findOne({ email });
+    if (existingUser) {
+      return res.status(200).send({ msg: "Email is already registered" });
     }
-    catch(err){
-        console.log(`Error is creating user :- ${err.message}`);
-        res.status(500).send({msg : err.message})
-    }
-}
+
+    // Hash the password
+    const hashedPassword = await bcrypt.hash(password, SaltRound);
+
+    // Create the user
+    const user = await USER.create({
+      username,
+      email,
+      password: hashedPassword,
+      collegename,
+      passingyear,
+    });
+
+    console.log(user);
+    res.status(200).send({ user });
+  } catch (error) {
+    console.error(error); // Use `console.error` to log errors
+    res.status(500).send({ msg: "User not created", err: error.message });
+  }
+};
 
 const login = async (req, res) => {
-    try{
-        let {email, password} = req.body
+  try {
+    let data = req.body;
+    const { email, password } = data;
+    console.log(data);
 
-        const login = await USER.findOne({email: email});
+    // find User Is Valid or Not
 
-        if(!login) {
-            return res.status(200).send({msg : "User is not Found"});
-        }
-        if((await bcrypt.compare(password, login.password)) == false){
-            return res.status(200).send({msg : "Password is incorrect"});
-        }
-        // genrate token
-        const token = jwt.sign({_id :login._id}, SecretKey , {expiresIn : "24h"});
-        const loginemail = login.email;
-        const loginpass = login.password;
-
-        res.status(200).send({user : [loginemail, loginpass], token : token, userid : login._id})
-
+    const login = await USER.findOne({ email: email });
+    if (!login) {
+      return res.status(200).send({ msg: "user not found" });
     }
-    catch(err){
-        res.status(500).send({msg : err.message});
+    if ((await bcrypt.compare(password, login.password)) == false) {
+      return res.status(200).send({ msg: "incorrect password" });
     }
-}
 
-const dashboard = (req, res)=>{
-    return res.send({
-        result : "My name is Nitin and You are Verify"
-    })
-}
+    // Genrate Token
 
+    const token = jwt.sign({ _id: login._id }, SecretKey, { expiresIn: "24h" });
+    console.log(login, token);
+    const loginemail = login.email;
+    const loginpass = login.password;
+    console.log(loginemail, loginpass);
 
+    res
+      .status(200)
+      .send({ user: [loginemail, loginpass], token: token, userid: login._id });
+  } catch (e) {
+    res.status(500).send("error occured", e);
+  }
+};
 
+const dashboard = (req, res) => {
+  return res.send({
+    result: "My name is Nitin and You are Verify",
+  });
+};
 
-
-
-
-
-
-
-
-module.exports = {register , login , dashboard }
+module.exports = { register, login, dashboard };

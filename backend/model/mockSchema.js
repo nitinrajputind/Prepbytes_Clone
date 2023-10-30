@@ -13,17 +13,14 @@ const MockSchema = mongoose.Schema({
   },
   date: {
     type: String,
-    required: true,
     trim: true,
   },
   participants: {
     type: Number,
-    required: true,
     trim: true,
   },
   time:{
     type: String,
-    required: true,
     trim: true,
   },
   img : {

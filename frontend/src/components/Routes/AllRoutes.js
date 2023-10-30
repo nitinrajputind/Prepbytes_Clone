@@ -8,6 +8,8 @@ import Footer from '../Footer/Footer';
 import MasterCompetative from '../Pages/MasterCompetative'
 import FullStack from '../Pages/FullStack'
 import ElevationAcademy from '../Pages/ElevationAcademy'
+import Login from '../LoginAndSingup/Login'
+import SignUp from '../LoginAndSingup/SignUp'
 
 
 const AllRoutes = () => {
@@ -22,6 +24,8 @@ const AllRoutes = () => {
         <Route path='/master-competitive-programming' element={<MasterCompetative/>}/>
         <Route path='/online-full-stack-developer-mern-certification-program' element={<FullStack/>}/>
         <Route path='/elevation-academy' element={<ElevationAcademy/>}/>
+        <Route path='/login' element={<Login/>}/>
+        <Route path='/signUp' element={<SignUp/>}/>
       </Routes>
 
       <Footer/>
