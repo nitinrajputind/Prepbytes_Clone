@@ -29,7 +29,7 @@ function SignUp() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:8080/register", formData)
+      .post("https://prepbytes-clone.onrender.com/register", formData)
       .then((response) => {
         if (response.data.user) {
           setFormData({

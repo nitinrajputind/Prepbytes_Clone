@@ -23,7 +23,7 @@ function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:8080/login", formData)
+      .post("https://prepbytes-clone.onrender.com/login", formData)
       .then((response) => {
         if (response.data.user) {
           const token = response.data.token;

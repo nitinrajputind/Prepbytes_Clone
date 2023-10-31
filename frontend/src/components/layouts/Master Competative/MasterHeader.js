@@ -19,7 +19,7 @@ const MasterHeader = () => {
       const token = localStorage.getItem('token');
       // console.log("This is Token ",token)
   
-      axios.get('http://localhost:8080/dashboard',{
+      axios.get('https://prepbytes-clone.onrender.com/dashboard',{
         headers: {
           Authorization : `Bearer ${token}`
         },
@@ -54,7 +54,7 @@ const MasterHeader = () => {
       };
   
       const response = await fetch(
-        "http://localhost:8080/api/create-checkout-session",
+        "https://prepbytes-clone.onrender.com/api/create-checkout-session",
         {
           method: "POST",
           headers: headers,

@@ -57,8 +57,8 @@ app.post("/api/create-checkout-session", async (req, res) => {
       payment_method_types: ["card"],
       line_items: lineItems,
       mode: "payment",
-      success_url: "http://localhost:3000/dashBoard",
-      cancel_url: "http://localhost:3000/cancel",
+      success_url: "https://pb-clone-nitinrajputind.vercel.app/dashBoard",
+      cancel_url: "https://pb-clone-nitinrajputind.vercel.app/cancel",
   
     });
     res.json({id:session.id})

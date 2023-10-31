@@ -18,6 +18,7 @@ import MongoDB from '../Pages/Project/MongoDB'
 import Node from '../Pages/Project/Node'
 import ReactJS from '../Pages/Project/ReactJS'
 import DashBoard from '../DashBoard/DashBoard'
+import Cancel from '../DashBoard/Cancel'
 
 
 const AllRoutes = () => {
@@ -50,6 +51,7 @@ const AllRoutes = () => {
         <Route path='/signUp' element={<SignUp/>}/>
 
         <Route path='/dashBoard' element={<DashBoard/>}/>
+        <Route path='/cancel' element={<Cancel/>}/>
 
       </Routes>
       
