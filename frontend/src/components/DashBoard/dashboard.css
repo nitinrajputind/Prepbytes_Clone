@@ -1,0 +1,238 @@
+.header{
+    width: 100%;
+    box-shadow: 0 3px 6px rgba(0,0,0,.05);
+    height: 76px;
+}
+.DashBoard_Header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Header_Logo{
+    width: 160px;
+    height: 80px;
+}
+.Client_Icon{
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+    gap: 20px;
+    color: #1FA6EC;
+}
+.Client_Icon h1{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #1FA6EC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 25px;
+}
+
+
+
+/* Course Line */
+.mycourses-section_top {
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #cbcbcb;
+    margin: auto;
+    margin-bottom: 16px;
+}
+.mycourses-section_top_view {
+    letter-spacing: .22px;
+    color: #817f7f;
+    opacity: 1;
+    display: flex;
+    line-height: 20px;
+    text-align: center;
+}
+.mycourses-section_tab_active {
+    position: relative;
+    display: table-cell;
+    transition: all .3s ease;
+    padding: 1em 1.6em;
+    transform: translateZ(0);
+    color: #00a5ec;
+    white-space: nowrap;
+    cursor: pointer;
+    text-decoration: none;
+}
+.mycourses-section_tab_active:after {
+    transition: all .3s cubic-bezier(1,0,0,1);
+    will-change: transform,box-shadow,opacity;
+    position: absolute;
+    content: "";
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 3px 3px 0 0;
+    background: #00a5ec;
+    box-shadow: 0 4px 10px 3px rgba(#00a5ec,.15);
+    opacity: 0;
+    transform: scaleX(0);
+    opacity: 1;
+    transform: scale(1);
+}
+
+.mycourses-section_courses-container {
+    width: 92%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: auto;
+}
+
+
+/* Course Card Style */
+.EnrolledCourseCard__container {
+    margin: 15px;
+    box-shadow: 0 4px .9em #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    width: 282px;
+    height: 348px;
+    background: transparent linear-gradient(180deg,#fff,#fff 24%,#fff 38%,hsla(0,0%,100%,.03137254901960784)) 0 0 no-repeat padding-box;
+    border: 1px solid #ededed;
+    border-radius: 10px;
+    padding: 0 12px;
+    width: 304px;
+    height: 304px;
+}
+.EnrolledCourseCard__container-bg-image {
+    position: absolute;
+}
+.EnrolledCourseCard__container-progress-bar-container.progress-bar-top-margin {
+    margin-top: 2rem;
+}
+.EnrolledCourseCard__container-progress-bar-container {
+    display: flex;
+    padding: 8px 0;
+    width: 100%;
+}
+.EnrolledCourseCard__container-progress-bar, .EnrolledCourseCard__container-progress-bar .MuiBox-root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.EnrolledCourseCard__container-course-image {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+.EnrolledCourseCard__container-dates-container {
+    width: 65%;
+    border-left: 1px solid #cbcbcb;
+    margin: 2px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 1.5rem;
+    height: 96px;
+}
+
+.EnrolledCourseCard__container-dates-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 124px;
+    height: 31px;
+}
+.EnrolledCourseCard__container-date-icon {
+    width: 24px;
+    height: 24px;
+}
+.EnrolledCourseCard__container-dates {
+    width: 89px;
+    height: 31px;
+}
+.EnrolledCourseCard__container-date-label {
+    height: 12px;
+    text-align: left;
+    font: normal normal normal 10px/12px Inter;
+    letter-spacing: .16px;
+    color: #424242;
+}
+.EnrolledCourseCard__container-date {
+    text-align: left;
+    letter-spacing: .22px;
+    color: #424242;
+    opacity: 1;
+    font-size: 14px;
+    font-weight: 500;
+    font: normal normal 500 12px/18px Inter;
+}
+.EnrolledCourseCard__container-heading {
+    letter-spacing: .38px;
+    color: #424242;
+    opacity: 1;
+    width: 235px;
+    height: 75px;
+    text-align: left;
+    font: normal normal 700 22px/32px Inter;
+    width: 260px;
+}
+.EnrolledCourseCard__container-btn-container {
+    min-height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.EnrolledCourseCard__container-button {
+    color: #fff;
+    padding: 6px 30px;
+    font-size: 15px;
+    outline: none;
+    cursor: pointer;
+    background: #00a5ec 0 0 no-repeat padding-box;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    text-align: center;
+    width: 234px;
+    height: 38px;
+    width: 260px;
+    z-index: 1;
+    font: normal normal 700 14px/17px Inter;
+}
+.EnrolledCourseCard__container-button.button-padding-btm {
+    margin-bottom: .5rem;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .mycourses-section_courses-container {
+        justify-content: center;
+    }
+    .max-Width{
+        min-width: 304px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .mycourses-section_courses-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-Width:345px) {
+    .max-Width{
+        min-width: 90%;
+    }
+}
+
+
+
+

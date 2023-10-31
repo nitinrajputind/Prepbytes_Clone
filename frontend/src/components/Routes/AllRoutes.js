@@ -17,6 +17,7 @@ import Javascript from '../Pages/Project/Javascript'
 import MongoDB from '../Pages/Project/MongoDB'
 import Node from '../Pages/Project/Node'
 import ReactJS from '../Pages/Project/ReactJS'
+import DashBoard from '../DashBoard/DashBoard'
 
 
 const AllRoutes = () => {
@@ -25,7 +26,7 @@ const AllRoutes = () => {
 
   const ShouldShowNavbarAndFooter=()=>{
     const currentPath = window.location.pathname
-    return !(currentPath === "/dashboard" || currentPath === "/cancel")
+    return !(currentPath === "/dashBoard" || currentPath === "/cancel")
   }
   return (
     <div>
@@ -45,11 +46,10 @@ const AllRoutes = () => {
         <Route path='/Node_Project' element={<Node/>}/>
         <Route path='/MongoDB_Project' element={<MongoDB/>}/>
 
-
-
-
         <Route path='/login' element={<Login/>}/>
         <Route path='/signUp' element={<SignUp/>}/>
+
+        <Route path='/dashBoard' element={<DashBoard/>}/>
 
       </Routes>
       

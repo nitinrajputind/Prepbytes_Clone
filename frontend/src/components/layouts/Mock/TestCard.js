@@ -74,7 +74,7 @@ const TestCard = (props) => {
 
 
   const handleClick = (id, name, date, participants, time, img, price) =>{
-    const userid = localStorage.getItem('user');
+    const userid = localStorage.getItem('userid');
 
     if(verified){
       const isItemInCart = select.some(cartItem=>cartItem.id === id);
