@@ -1,77 +1,140 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import TopHeader from '../../layouts/project/TopHeader';
+import Loader from '../../Loader/Loader';
+import axios from 'axios';
 
 const ReactJS = () => {
+
+  const [apiData, setApiData]= useState([]);
+  const [loading, setLoading] = useState(true);
+
+
+  useEffect(()=>{
+    axios.get("https://prepbytes-clone.onrender.com/project")
+    .then((response)=>{
+      setApiData(response.data);
+      setLoading(false);
+    })
+    .catch((error)=>{
+      console.log(error)
+      setLoading(false);
+    })
+  },[])
+
+
+
+
   return (
     <>
-      <TopHeader />
-      <div className="site-content">
-
-        {/* Left Side Contanier  */}
-        <div className="content-area">
-          <div className="twp-banner-details">
-            <header className="entry-header">
-              <h1 className="entry-title entry-title-full">Programing Content</h1>
-              </header>
-              </div>
-              <div className="site-main">
-
-                <article className='post-6728 page type-page status-publish hentry'>
-                  <div className="entry-content">
-
-                    <p>
-                        <img src="https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/assets/1644309507353-Sorting%20image-22.png" alt="" />
-                    </p>
-                    <h2>Here is a list of articles related to C++ PROGRAMMING LANGUAGE</h2>
-                    <div className="is-layout-flex wp-container-5 wp-block-columns">
-
-                        <div className="is-layout-flow wp-block-column">
-                            <ol>
-                                <li>1. &nbsp; <strong>Access Specifiers In C++ – A Quick Glimpse To Private,public, And Protected</strong></li>
-                                <li>2. &nbsp; <strong>Binary To Decimal In C++</strong></li>
-                                <li>3. &nbsp; <strong>Binary To Decimal In C++</strong></li>
-                                <li>4. &nbsp;<strong>Binary To Decimal In C++</strong></li>
-                                <li>5. &nbsp;<strong>Binary To Decimal In C++</strong></li>
-                            </ol>
-                        </div>
-                        {/* <div className="is-layout-flow wp-block-column"></div> */}
-                    </div>
-                    <h2>Miscellaneous</h2>
-                    <div className="is-layout-flex wp-container-8 wp-block-columns">
-                        <div className="is-layout-flow wp-block-column">
-                            <ol>
-                                <li>1.  &nbsp;<strong>10 simple C++ programs for beginners</strong></li>
-                                <li>2.  &nbsp; <strong>10 simple C++ programs for beginners</strong></li>
-                                <li>3.  &nbsp;<strong>10 simple C++ programs for beginners</strong></li>
-                                <li>4.  &nbsp;<strong>10 simple C++ programs for beginners</strong></li>
-                            </ol>
-                        </div>
-                        {/* <div className="is-layout-flow wp-block-column"></div> */}
-                    </div>
+    {
+      loading ?
+      (<Loader/>)
+      :
+      ( apiData &&
+        apiData.filter((item)=> item.id === 3)
+        .map((item,index)=>{
+          return(
+          <>
+            <TopHeader />
+            <div className="site-content">
+              
+              
+              {/* Left Side Contanier  */}
+              <div className="content-area">
+                <div className="twp-banner-details">
+                  <header className="entry-header">
+                  <h1 className="entry-title entry-title-full">{item.name.toUpperCase()} PROJECT</h1>
+                  </header>
                 </div>
+                <div className="site-main">
+                  
+                  <article className='post-6728 page type-page status-publish hentry'>
+                    <div className="entry-content">
+                      <p>
+                        <img src={item.img} alt="" />
+                      </p>
+                      <h2>{item.name} Defination</h2>
+                      <div className="is-layout-flex wp-container-5 wp-block-columns">
+                        
+                        <div className="is-layout-flow wp-block-column">
+                          <ol>
+                            <li>{item.definition}</li>
+                          </ol>
+                        </div>
+                        {/* <div className="is-layout-flow wp-block-column"></div> */}
+                      </div>
+                      <h2>Miscellaneous</h2>
+                      <div className="is-layout-flex wp-container-8 wp-block-columns">
+                        <div className="is-layout-flow wp-block-column">
+                          <ol>
+                            <li>{item.detail1}</li>
+                            <li>{item.detail2}</li>
+                            <li>{item.detail3}</li>
+                            <li>{item.detail1}</li>
+                            <li>{item.detail4}</li>
+                            <li>{item.detail5}</li>
+                            <li>{item.detail6}</li>
+                            <li>{item.detail7}</li>
+                            <li>{item.detail8}</li>
+                            <li>{item.detail9}</li>
+                            <li>{item.detail10}</li>
+                          </ol>
+                        </div>
+                        {/* <div className="is-layout-flow wp-block-column"></div> */}
+                      </div>
+                    </div>
+                  </article>
+                  </div>
+                </div>
+                
+                {/* Right Side List Area  */}
+                <div className="widget-area">
+                  <div className="theiaStickySidebar">
+                    
+                    <div className="widget widget_pages">
+                      <h2 className="widget-title">Topics</h2>
+                      
+                      <ul>
+                        <li className="page_item page-item-7034">{item.topics1}</li>
+                      </ul>
+                      <ul>
+                        <li className="page_item page-item-7034">{item.topics2}</li>
+                      </ul>
+                      <ul>
+                        <li className="page_item page-item-7034">{item.topics3}</li>
+                      </ul>
+                      <ul>
+                        <li className="page_item page-item-7034">{item.topics4}</li>
+                      </ul>
+                      <ul>
+                        <li className="page_item page-item-7034">{item.topics5}</li>
+                      </ul>
+                      <ul>
+                        <li className="page_item page-item-7034">{item.topics6}</li>
+                      </ul>
+                      <ul>
+                        <li className="page_item page-item-7034">{item.topics7}</li>
+                      </ul>
+                      <ul>
+                        <li className="page_item page-item-7034">{item.topics8}</li>
+                      </ul>
+                      <ul>
+                        <li className="page_item page-item-7034">{item.topics9}</li>
+                      </ul>
+                      <ul>
+                        <li className="page_item page-item-7034">{item.topics10}</li>
+                      </ul>
+                      
 
-            </article>
-        </div>
-        </div>
-
-
-        {/* Right Side List Area  */}
-
-        <div className="widget-area">
-          <div className="theiaStickySidebar">
-
-            <div className="widget widget_pages">
-              <h2 className="widget-title">Topics</h2>
-
-              <ul>
-                <li className="page_item page-item-7034">ALGORITHMS</li>
-              </ul>
-
-            </div>
-          </div>
-        </div>
-
-      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </>
+            )
+          })
+          )
+    }
     </>
   );
 }

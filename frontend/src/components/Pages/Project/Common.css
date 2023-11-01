@@ -58,9 +58,11 @@
     gap: 2em;
 }
 
-
-
-
+.wp-block-column ol li{
+    margin-top: 18px;
+    font-weight: 500;
+    color: #636e72;
+}
 
 
 /* aside  */

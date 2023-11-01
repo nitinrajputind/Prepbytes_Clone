@@ -1,11 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios"
 import VideoTutorial from "../layouts/Tutorial/VideoTutorial";
-import videoapi from "../context/Videodata";
+import Loader from "../Loader/Loader";
+
 
 
 
 const Tutorial = () => {
-  console.log(videoapi)
+
+
+  const [apidata, setdata] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    axios
+      .get("https://prepbytes-clone.onrender.com/tutorial")
+      .then((response) => {
+        setdata(response.data);
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.log(error);
+        setLoading(false);
+      });
+  },[]);
+  console.log(apidata)
+
+
 
   return (
     <>
@@ -36,14 +57,20 @@ const Tutorial = () => {
             {/* Video Tutorial */}
 
             {
-              videoapi && videoapi.map((item, index)=>{
-                return(
-                  <VideoTutorial 
-                  url ={item.video}
-                  heading = {item.heading}
-                  details = {item.detail}/>
-                )
-              })
+              loading ?
+              (<Loader/>)
+              :
+              (
+                apidata && apidata.map((item, index)=>{
+                  return(
+                    <VideoTutorial 
+                    key={index}
+                    url ={item.video}
+                    heading = {item.heading}
+                    details = {item.detail}/>
+                  )
+                })
+              )
             }
 
           </div>

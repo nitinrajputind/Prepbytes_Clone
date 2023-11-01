@@ -2,10 +2,11 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import TestCard from '../layouts/Mock/TestCard'
 import TestCard2 from '../layouts/Mock/TestCard2'
+import Loader from '../Loader/Loader'
 
 
 const Mock = () => {
-
+    const[loading, setLoading] = useState(true)
     const[mockData, SetMockData] = useState([])
 
     // url = 
@@ -14,6 +15,7 @@ const Mock = () => {
         .then((response)=>{
             // console.log(response);
             SetMockData(response.data)
+            setLoading(false);
         })
         .catch((err)=>{
             console.log(err);
@@ -48,19 +50,25 @@ const Mock = () => {
                             {/* test Card Render Here */}
                             <div className="FeaturedMockTestList__main-container--past-mocktest">
                                 {
-                                    mockData && mockData.filter((item)=>item.id >=0 && item.id <=11).map((item, index)=>{
-                                        return(
-                                            <TestCard
-                                            id = {item.id}
-                                            name = {item.name}
-                                            date = {item.date}
-                                            participants = {item.participants}
-                                            time = {item.time}
-                                            img = {item.img}
-                                            price = {item.price}
-                                            />
-                                        )
-                                    })
+                                    loading ?
+                                    (<Loader/>)
+                                    :
+                                    (
+                                        mockData && mockData.filter((item)=>item.id >=0 && item.id <=11).map((item, index)=>{
+                                            return(
+                                                <TestCard
+                                                id = {item.id}
+                                                name = {item.name}
+                                                date = {item.date}
+                                                participants = {item.participants}
+                                                time = {item.time}
+                                                img = {item.img}
+                                                price = {item.price}
+                                                />
+                                            )
+                                        })
+                                    )
+                                    
                                 }
                             </div>
 

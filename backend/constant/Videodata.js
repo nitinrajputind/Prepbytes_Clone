@@ -1,4 +1,4 @@
-const videoapi = [
+const videoData = [
   {
     video: "https://www.youtube.com/embed/kE5QWhrNjqY",
     heading: "Competitive Programming",
@@ -38,4 +38,4 @@ const videoapi = [
   },
 ];
 
-export default videoapi
+module.exports = videoData;
