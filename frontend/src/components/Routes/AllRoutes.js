@@ -54,7 +54,6 @@ const AllRoutes = () => {
 
         <Route path='/dashBoard' element={<DashBoard/>}/>
         <Route path='/cancel' element={<Cancel/>}/>
-        <Route path='/CallBack' element={<CallBack/>}/>
       </Routes>
       
       {ShouldShowNavbarAndFooter() && <Footer/>}
