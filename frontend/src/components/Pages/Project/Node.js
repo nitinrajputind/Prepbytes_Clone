@@ -31,7 +31,7 @@ const Node = () => {
       (<Loader/>)
       :
       ( apiData &&
-        apiData.filter((item)=> item.id === "4")
+        apiData.filter((item)=> item.id === 4)
         .map((item,index)=>{
           return(
           <>

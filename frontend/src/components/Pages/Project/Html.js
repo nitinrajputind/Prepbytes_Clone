@@ -32,7 +32,7 @@ const Html = () => {
       (<Loader/>)
       :
       ( apiData &&
-        apiData.filter((item)=> item.id === "0")
+        apiData.filter((item)=> item.id === 0)
         .map((item,index)=>{
           return(
           <>

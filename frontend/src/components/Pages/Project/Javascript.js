@@ -31,7 +31,7 @@ const Javascript = () => {
       (<Loader/>)
       :
       ( apiData &&
-        apiData.filter((item)=> item.id === "2")
+        apiData.filter((item)=> item.id === 2)
         .map((item,index)=>{
           return(
           <>

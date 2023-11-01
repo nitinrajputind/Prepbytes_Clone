@@ -31,7 +31,7 @@ const MongoDB = () => {
       (<Loader/>)
       :
       ( apiData &&
-        apiData.filter((item)=> item.id === "5")
+        apiData.filter((item)=> item.id === 5)
         .map((item,index)=>{
           return(
           <>

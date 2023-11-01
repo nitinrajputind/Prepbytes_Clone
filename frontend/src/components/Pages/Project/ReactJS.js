@@ -31,7 +31,7 @@ const ReactJS = () => {
       (<Loader/>)
       :
       ( apiData &&
-        apiData.filter((item)=> item.id === "3")
+        apiData.filter((item)=> item.id === 3)
         .map((item,index)=>{
           return(
           <>
