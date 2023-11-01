@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import "./callback.css"
+import axios from "axios"
 
 const CallBack = () => {
-
+    const [res, setRes]= useState("")
     const [formData, setFormData] = useState({
         name :"",
         email:"",
@@ -13,11 +14,29 @@ const CallBack = () => {
     console.log(formData);
 
     const handleChange=(e)=>{
+        e.preventDefault();
         const { name, value} = e.target;
-        setFormData({...formData, [value]: value});
+        setFormData({...formData, [name]: value});
     }
 
+    const handlesubmit =(e)=>{
+        e.preventDefault();
+        axios.post("https://prepbytes-clone.onrender.com/enquire",formData)
+        .then((response)=>{
+            console.log(response.data.msg);
+            setRes(response.data.msg)
+            setFormData({
+                name: "",
+                email: "",
+                phone : "",
+                Query : "",
+            });
+        })
+        .catch((error)=>{
+            console.log("Error Registration : ", error)
+        });
 
+    }
 
 
   return (
@@ -36,13 +55,13 @@ const CallBack = () => {
 
                 {/* Right Contanier */}
                 <div className="getCallBack_main_Contanier_right">
-                    <form  onSubmit={handleSubmit}>
+                    <form  onSubmit={handlesubmit}>
                         <input type="text" name="name" id="name" placeholder='Name' value={formData.name} onChange={handleChange} required/>
                         <input type="email" name="email" id="email"  placeholder='Email' value={formData.email} onChange={handleChange} required/>
-                        <input type="number" name="phone" id="phone" placeholder='Phone' value={formData.phone} on />
-                        <textarea name="query" id="" cols="40" rows="20" autoComplete='off' required placeholder='Query'></textarea>
-                        <button type='submit'  >Request a Call Back</button>
-                        <p>Thanks for registering with us. Our Team will get back to you soon.</p>
+                        <input type="number" name="phone" id="phone" placeholder='Phone' value={formData.phone} onChange={handleChange} required/>
+                        <textarea name="Query" id="" cols="40" rows="20" autoComplete='off' required placeholder='Query' value={formData.Query} onChange={handleChange}></textarea>
+                        <button type='submit'>Request a Call Back</button>
+                        <p>{res}</p>
                     </form>
                 </div>
 

@@ -157,6 +157,12 @@
   flex-direction: column;
 }
 
+.user-info input[type="password"]{
+    border: none;
+    background: none;
+    outline: none;
+}
+
 @media screen and (max-width: 1024px) {
   .signup-container {
     flex-direction: column;

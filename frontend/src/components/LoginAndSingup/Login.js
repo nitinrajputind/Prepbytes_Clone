@@ -145,7 +145,7 @@ function Login() {
                                 
                                 <div className="user-info">
                                     <label htmlFor="pass">Password</label>
-                                    <input type="text" id="pass" name="password" value={formData.password} onChange={handleChange} required />
+                                    <input type="password" id="pass" name="password" value={formData.password} onChange={handleChange} required />
                                 </div>
                                 
                                 <p style={{ color: "red", display: "block", margin: "auto", width: "90%", }}>

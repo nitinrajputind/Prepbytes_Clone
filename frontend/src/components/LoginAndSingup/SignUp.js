@@ -142,7 +142,7 @@ function SignUp() {
                             
                             <div className="user-info">
                                 <label htmlFor="pass">Password</label>
-                                <input type="text" name="password" id="pass" value={formData.password} onChange={handleChange} required/>
+                                <input type="password" name="password" id="pass" value={formData.password} onChange={handleChange} required/>
                             </div>
                             <div className="college-detail">
                                 <div className="user-info">
