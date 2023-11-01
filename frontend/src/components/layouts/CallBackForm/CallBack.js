@@ -17,9 +17,25 @@ const CallBack = () => {
                     </Link>
                 </div>
 
-                <div className="RegisterModal-form">
+                <form className="RegisterModal-form">
+
                     <div className="RegisterModal-form-main-active">
                         <div className="RegisterModal-form-main--right">
+
+                            <div className="RegisterModal__form-container-box">
+                                <label htmlFor="">Name *</label>
+                                <input type="text" name="" id="" className='RegisterModal__form-select-box ' />
+                            </div>
+
+                            <div className="RegisterModal__form-container-box">
+                                <label htmlFor="">Email *</label>
+                                <input type="email" name="" id="" className='RegisterModal__form-select-box ' />
+                            </div>
+
+                            <div className="RegisterModal__form-container-box">
+                                <label htmlFor="">Phone *</label>
+                                <input type="number" name="" id=""  className='RegisterModal__form-select-box '/>
+                            </div>
 
                             <div className="RegisterModal__form-container">
                                 <label htmlFor="">Highest Degree *</label>
@@ -60,6 +76,7 @@ const CallBack = () => {
                                 <input type="checkbox" name="" id="" className='RegisterModal-form-accept-terms-and-conditions-checkbox' />
                                 <span className='RegisterModal-form-accept-terms-and-conditions-label'>I agree to the <Link className="RegisterModal-form-accept-terms-and-conditions-term">terms and conditions . </Link></span>
                             </div>
+
                             <div className="RegisterModal--button">
                                 <button className="RegisterModal--button-btn-active">Submit</button>
                             </div>
@@ -67,7 +84,8 @@ const CallBack = () => {
                         </div>
                     </div>
                     <p className='RegisterModal-form-main--right--status-error'>Thanku For Submitting Form </p>
-                </div>
+
+                </form>
 
 
             </div>

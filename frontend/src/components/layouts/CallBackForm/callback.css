@@ -58,6 +58,16 @@
     width: 100%;
     padding: 0 10% 0 6%;
 }
+.RegisterModal__form-container-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.RegisterModal-form-main--right input:not(:first-child) {
+    margin-top: 0;
+}
+
 .RegisterModal__form-container {
     display: flex;
     align-items: baseline;
@@ -215,6 +225,9 @@ a:link {
         align-items: normal;
     }
     .RegisterModal__form-select {
+        width: 100%;
+    }
+    .RegisterModal-form-main--right input{
         width: 100%;
     }
 }
