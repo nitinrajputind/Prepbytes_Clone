@@ -21,7 +21,7 @@ const Css = () => {
     })
   },[])
 
-
+  console.log(apiData)
 
 
   return (
@@ -31,7 +31,7 @@ const Css = () => {
       (<Loader/>)
       :
       ( apiData &&
-        apiData.filter((item)=> item.id === 1)
+        apiData.filter((item)=> item.id === "1")
         .map((item,index)=>{
           return(
           <>
