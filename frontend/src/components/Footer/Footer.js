@@ -5,6 +5,14 @@ import "./footer.css"
 
 
 const Footer = () => {
+
+  const Scroller=()=>{
+    window.scroll(0,0)
+  }
+
+
+
+
   return (
     <div className='Footer'>
       <div className="Footer_Container">
@@ -67,15 +75,15 @@ const Footer = () => {
         {/* QUICK LINKS Container */}
         <div className="Quick_Link">
           <div className="footer_tittle">
-            QUICK LINKS
+            Project
           </div>
         <ul>
-          <Link><li>Interview Questions</li></Link>
-          <Link><li>Mock Tests</li></Link>
-          <Link><li>Placements Programs</li></Link>
-          <Link><li>Coding Courses</li></Link>
-          <Link><li>About Us</li></Link>
-          <Link><li>Blog</li></Link>
+          <Link to={"/HTML_Project"} onClick={Scroller}><li>HTML</li></Link>
+          <Link to={"/CSS_Project"} onClick={Scroller}><li>CSS</li></Link>
+          <Link to={"/JavaScript_Project"} onClick={Scroller}><li>JavaScript</li></Link>
+          <Link to={"/ReactJs_Project"} onClick={Scroller}><li>ReactJS</li></Link>
+          <Link to={"/Node_Project"} onClick={Scroller}><li>Node</li></Link>
+          <Link to={"/MongoDB_Project"} onClick={Scroller}><li>MongoDB</li></Link>
         </ul>
         </div>
 
