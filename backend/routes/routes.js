@@ -1,5 +1,5 @@
 const mocktest = require("../controller/mockController");
-const { register, login, dashboard } = require("../controller/userController");
+const { register, login, dashboard, userQuery } = require("../controller/userController");
 const userAuth = require("../middleware/auth_middle");
 const routes = require("express").Router();
 
@@ -14,6 +14,10 @@ routes.post("/login", login)
 
 // Auth Checking 
 routes.get("/dashboard",userAuth , dashboard);
+
+// Enquire Form
+
+routes.post('/enquire', userQuery)
 
 
 

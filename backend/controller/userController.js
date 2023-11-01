@@ -1,4 +1,5 @@
 const USER = require("../model/userSchema");
+const ENQUIRE = require("../model/EnquireSchema")
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
@@ -73,4 +74,30 @@ const dashboard = (req, res) => {
   });
 };
 
-module.exports = { register, login, dashboard };
+
+const userQuery=async(req, res)=>{
+  try{
+    const {name, email, phone, Query} = req.body
+    const enquiryData = await ENQUIRE.create({
+      name : name,
+      email: email,
+      phone: phone,
+      Query : Query
+    })
+    res.status(200).send({msg : "Thanks for registering with us. Our Team will get back to you soon."});
+
+  }
+  catch(err){
+    console.log(`Error in Enquire Form ${err.message}`)
+  }
+}
+
+
+
+
+
+
+
+
+
+module.exports = { register, login, dashboard, userQuery };

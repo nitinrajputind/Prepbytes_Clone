@@ -19,6 +19,8 @@ import Node from '../Pages/Project/Node'
 import ReactJS from '../Pages/Project/ReactJS'
 import DashBoard from '../DashBoard/DashBoard'
 import Cancel from '../DashBoard/Cancel'
+import CallBack from '../layouts/CallBackForm/CallBack'
+
 
 
 const AllRoutes = () => {
@@ -52,7 +54,7 @@ const AllRoutes = () => {
 
         <Route path='/dashBoard' element={<DashBoard/>}/>
         <Route path='/cancel' element={<Cancel/>}/>
-
+        <Route path='/CallBack' element={<CallBack/>}/>
       </Routes>
       
       {ShouldShowNavbarAndFooter() && <Footer/>}

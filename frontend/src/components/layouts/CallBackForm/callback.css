@@ -1,0 +1,236 @@
+.RegisterModal__container {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.75);
+    z-index: 10000;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow-y: scroll;
+    padding-top: 10px;
+}
+.RegisterModal, .RegisterModalActive {
+    border-radius: 5px;
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.1607843137254902);
+    box-shadow: 0 3px 6px rgba(0,0,0,.1607843137254902);
+    width: 1050px;
+    margin: auto;
+    min-height: 610px;
+    max-width: 100%;
+    text-align: center;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.RegisterModal-left {
+    width: 45%;
+    height: 100%;
+}
+.RegisterModal-right {
+    width: 60%;
+    z-index: 100;
+}
+.RegisterModal__top {
+    padding: 10px 30px 0;
+    position: relative;
+}
+.RegisterModal__top-text-active {
+    margin-top: 84px;
+}
+.RegisterModal__close {
+    position: absolute;
+    top: 20px;
+    right: 22px;
+    cursor: pointer;
+}
+.RegisterModal-form-main-active {
+    display: flex;
+    margin-top: 70px;
+}
+
+.RegisterModal-form-main--right {
+    width: 100%;
+    padding: 0 10% 0 6%;
+}
+.RegisterModal__form-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+.RegisterModal__form-container-box label, .RegisterModal__form-container label {
+    width: 250px;
+    text-align: initial;
+}
+.RegisterModal__form-select {
+    padding: 12px 6px;
+    border-radius: 4px;
+    margin-top: 20px;
+    font-size: 14px;
+    width: 88%;
+    height: 15px;
+    background: transparent;
+    /* background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>"); */
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 7px;
+    border: 1px solid #dfdfdf;
+    color: #707070;
+}
+select option {
+    font-weight: 400;
+}
+.RegisterModal__form-working-professional {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 19px;
+}
+.RegisterModal__form-working-professional label {
+    text-align: initial;
+}
+.RegisterModal__form-button {
+    display: flex;
+}
+.RegisterModal__form-working-professional-button, 
+.RegisterModal__form-working-professional-button-no {
+    width: 95px;
+    height: 38px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: auto;
+    cursor: pointer;
+    align-items: center;
+}
+.RegisterModal-form-accept-terms-and-conditions-container {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 0;
+    width: 100%;
+}
+.RegisterModal-form-main--right input {
+    font-size: 14px;
+    width: 88%;
+    margin-top: 19px;
+    padding: 10px 5px;
+    border: 1px solid #e1e2e2;
+    border-radius: 4px;
+    color: #707070;
+}
+.RegisterModal-form-accept-terms-and-conditions-checkbox {
+    display: inline!important;
+    width: unset!important;
+    color: unset!important;
+    padding: unset!important;
+    margin: unset!important;
+    margin-right: 15px!important;
+    color: #00a5ec!important;
+    height: 15px;
+    width: 15px;
+    outline: 1px #5393ec;
+    accent-color: #5393ec;
+}
+.RegisterModal-form-accept-terms-and-conditions-label {
+    display: inline-block;
+    letter-spacing: 1.3px;
+    font-weight: 400;
+}
+.RegisterModal-form-accept-terms-and-conditions-term {
+    color: #5393ec;
+    text-decoration: none;
+    font-weight: 600px;
+}
+a:link {
+    text-decoration: none;
+}
+.RegisterModal--button-btn-active {
+    margin-top: 60px;
+}
+.RegisterModal--button-btn, .RegisterModal--button-btn-active {
+    padding: 11px 40px;
+    font-size: 16px;
+    text-decoration: none;
+    border: none;
+    -webkit-box-shadow: 0 3px 6px rgba(95,141,196,.2);
+    box-shadow: 0 3px 6px rgba(95,141,196,.2);
+    border-radius: 5px;
+    color: #fff;
+    background: #f78077;
+    font-weight: 600;
+    margin: 25px 20px 0;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 1024px){
+    .RegisterModalActive {
+        min-height: auto;
+        width: 95%;
+    }
+    .RegisterModal-left {
+        display: none;
+    }
+    .RegisterModal-right {
+        width: 96%;
+        padding-bottom: 30px;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .RegisterModal__top-text-active {
+        margin-top: 20px;
+    }
+    .RegisterModal__top-text, .RegisterModal__top-text-active {
+        color: #424242;
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 15px;
+        font-weight: 600;
+        margin-top: 25px;
+    }
+    .RegisterModal__close {
+        right: 0;
+    }
+    .RegisterModal__form-working-professional {
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+    }
+}
+
+@media screen  and (max-width: 500px) {
+    .RegisterModal__form-container, .RegisterModal__form-container-box {
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+    }
+    .RegisterModal__form-select {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+.RegisterModal-form-main--right--status-error {
+    color: #ea4335;
+}
+.RegisterModal-form-main--right--status, .RegisterModal-form-main--right--status-error {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0 15px;
+}

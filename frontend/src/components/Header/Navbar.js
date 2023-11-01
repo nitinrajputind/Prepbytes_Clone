@@ -17,7 +17,6 @@ const Navbar = () => {
   const handletoken = () => {
     localStorage.removeItem("token");
     localStorage.removeItem("userid");
-    localStorage.removeItem("cartData");
     localStorage.removeItem("firstname");
     localStorage.removeItem("username");
    
@@ -175,7 +174,7 @@ const Navbar = () => {
                 {username ? (
                 <div>
                   <ul>
-                    <Link to={"/master_comp"} style={{ textDecoration: "none", color: "black", display: "flex",}}>
+                    <Link style={{ textDecoration: "none", color: "black", display: "flex",}}>
                       <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMSIgaGVpZ2h0PSIyMSIgdmlld0JveD0iMCAwIDIxIDIxIj4KICA8cGF0aCBpZD0idXNlciIgZD0iTTEwLjUsOEExMC41LDEwLjUsMCwxLDAsMjEsMTguNSwxMC41LDEwLjUsMCwwLDAsMTAuNSw4Wm0wLDQuMDY1QTMuNzI2LDMuNzI2LDAsMSwxLDYuNzc0LDE1Ljc5LDMuNzI2LDMuNzI2LDAsMCwxLDEwLjUsMTIuMDY1Wm0wLDE0LjU2NWE4LjExMyw4LjExMywwLDAsMS02LjItMi44ODgsNC43MjEsNC43MjEsMCwwLDEsNC4xNy0yLjUzMiwxLjAzNiwxLjAzNiwwLDAsMSwuMy4wNDcsNS42MDYsNS42MDYsMCwwLDAsMS43MzIuMjkyLDUuNTg0LDUuNTg0LDAsMCwwLDEuNzMyLS4yOTIsMS4wMzYsMS4wMzYsMCwwLDEsLjMtLjA0Nyw0LjcyMSw0LjcyMSwwLDAsMSw0LjE3LDIuNTMyQTguMTEzLDguMTEzLDAsMCwxLDEwLjUsMjYuNjI5WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAtOCkiIGZpbGw9IiMwMzYiLz4KPC9zdmc+Cg==" alt="" />
                       <li onClick={toogle} style={{ paddingLeft: "10px" }}>{userfirstname}</li>
                     </Link>  
@@ -184,7 +183,7 @@ const Navbar = () => {
                   <ul>
                     <Link to={"/dashBoard"} style={{ textDecoration: "none", color: "black", display: "flex",}}>
                     <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOS4yMjMiIGhlaWdodD0iMjIuODg4IiB2aWV3Qm94PSIwIDAgMTkuMjIzIDIyLjg4OCI+CiAgPGcgaWQ9InJlYWRpbmctYm9vayIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTQwLjk5NCkiPgogICAgPHBhdGggaWQ9IlBhdGhfMSIgZGF0YS1uYW1lPSJQYXRoIDEiIGQ9Ik02MC4yMTcsMTQuNzUyYTIuMjM5LDIuMjM5LDAsMCwwLTEuNzg4LTIuMTlWMTAuMTQ4YS42NzEuNjcxLDAsMCwwLS45MDYtLjYyOGwtMS4yOC40OGE3LjgxOCw3LjgxOCwwLDAsMC0yLjk4MS0xLjkzNiw0LjQ3LDQuNDcsMCwxLDAtNS4zMTIsMEE3LjgxOCw3LjgxOCwwLDAsMCw0NC45NjgsMTBsLTEuMjgtLjQ4YS42NzEuNjcxLDAsMCwwLS45MDYuNjI4djIuNDE0YTIuMjM1LDIuMjM1LDAsMCwwLDAsNC4zOHYyLjU5M2EuNjcxLjY3MSwwLDAsMCwuNDM1LjYyOGw3LjE1MywyLjY4MmEuNjc4LjY3OCwwLDAsMCwuNDcxLDBsNy4xNTMtMi42ODJhLjY3MS42NzEsMCwwLDAsLjQzNS0uNjI4VjE2Ljk0MkEyLjIzOSwyLjIzOSwwLDAsMCw2MC4yMTcsMTQuNzUyWk00Ny40NzYsNC40N0EzLjEyOSwzLjEyOSwwLDEsMSw1MC42MDUsNy42LDMuMTMzLDMuMTMzLDAsMCwxLDQ3LjQ3Niw0LjQ3Wm0zLjEyOSw0LjQ3YTYuNDcyLDYuNDcyLDAsMCwxLDQuMjQyLDEuNTgybC00LjI0MiwxLjU5MS00LjI0Mi0xLjU5MUE2LjQ3Miw2LjQ3MiwwLDAsMSw1MC42MDUsOC45NDFabS04LjI3LDUuODExYS45LjksMCwwLDEsLjg5NC0uODk0aC40NDd2MS43ODhoLS40NDdBLjkuOSwwLDAsMSw0Mi4zMzUsMTQuNzUyWm0xLjc4OCwyLjIxM2ExLjEyLDEuMTIsMCwwLDAsLjg5NC0xLjFWMTMuNjM1YTEuMTIsMS4xMiwwLDAsMC0uODk0LTEuMVYxMS4xMTVsNS44MTEsMi4xNzlWMjEuMjVsLTUuODExLTIuMTc5Wm03LjE1Myw0LjI4NVYxMy4yOTVsNS44MTEtMi4xNzlWMTIuNTRhMS4xMiwxLjEyLDAsMCwwLS44OTQsMS4xVjE1Ljg3YTEuMTIsMS4xMiwwLDAsMCwuODk0LDEuMXYyLjEwNlptNi43MDYtNS42aC0uNDQ3VjEzLjg1OGguNDQ3YS44OTQuODk0LDAsMCwxLDAsMS43ODhaIiBmaWxsPSIjMDM2Ii8+CiAgPC9nPgo8L3N2Zz4K"alt="" />
-                    <Link to={"/dashboard"} style={{ textDecoration: "none", color: "black" }} >
+                    <Link to={"/dashBoard"} style={{ textDecoration: "none", color: "black" }} >
                       {" "}
                       <li onClick={toogle} style={{ paddingLeft: "10px" }}> My Dashboard </li>
                     </Link>

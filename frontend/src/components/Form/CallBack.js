@@ -1,7 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./callback.css"
 
 const CallBack = () => {
+
+    const [formData, setFormData] = useState({
+        name :"",
+        email:"",
+        phone : "",
+        Query : "",
+    });
+
+    console.log(formData);
+
+    const handleChange=(e)=>{
+        const { name, value} = e.target;
+        setFormData({...formData, [value]: value});
+    }
+
+
+
+
   return (
     <div className='getCallBack'>
         <div className="getCallBack_main">
@@ -18,12 +36,12 @@ const CallBack = () => {
 
                 {/* Right Contanier */}
                 <div className="getCallBack_main_Contanier_right">
-                    <form >
-                        <input type="text" name="name" id="name" placeholder='Name'/>
-                        <input type="email" name="email" id="email"  placeholder='Email'/>
-                        <input type="number" name="phone" id="phone" placeholder='Phone' />
+                    <form  onSubmit={handleSubmit}>
+                        <input type="text" name="name" id="name" placeholder='Name' value={formData.name} onChange={handleChange} required/>
+                        <input type="email" name="email" id="email"  placeholder='Email' value={formData.email} onChange={handleChange} required/>
+                        <input type="number" name="phone" id="phone" placeholder='Phone' value={formData.phone} on />
                         <textarea name="query" id="" cols="40" rows="20" autoComplete='off' required placeholder='Query'></textarea>
-                        <button type='submit' >Request a Call Back</button>
+                        <button type='submit'  >Request a Call Back</button>
                         <p>Thanks for registering with us. Our Team will get back to you soon.</p>
                     </form>
                 </div>
