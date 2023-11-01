@@ -1,12 +1,53 @@
 /* eslint-disable no-unused-vars */
-import React from 'react'
+import React, { useState } from 'react'
 import "./callback.css"
 import { Link } from 'react-router-dom'
+import axios from "axios"
 
 
 const CallBack = (props) => {
     const{toogle, handleToogle} = props
     console.log(toogle)
+
+
+
+    const [msg, setmsg] = useState();
+
+    const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    highest_degree: "",
+    branch: "",
+    passing_out: "",
+});
+
+    const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    axios
+      .post("https://prepbytes-clone.onrender.com/callbackForm", formData)
+      .then((response) => {
+        setmsg(response.data.msg);
+        console.log(response.data.msg);
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          highest_degree: "",
+          branch: "",
+          passing_out: "",
+        });
+      })
+      .catch((error) => {
+        console.error("Error registering:", error);
+      });
+  };
+
 
 
 
@@ -25,29 +66,29 @@ const CallBack = (props) => {
                     </Link>
                 </div>
 
-                <form className="RegisterModal-form">
+                <form className="RegisterModal-form" onSubmit={handleSubmit}>
 
                     <div className="RegisterModal-form-main-active">
                         <div className="RegisterModal-form-main--right">
 
                             <div className="RegisterModal__form-container-box">
                                 <label htmlFor="">Name *</label>
-                                <input type="text" name="" id="" className='RegisterModal__form-select-box ' />
+                                <input type="text" name="name" id="" className='RegisterModal__form-select-box' value={formData.name}  onChange={handleChange} required/>
                             </div>
 
                             <div className="RegisterModal__form-container-box">
                                 <label htmlFor="">Email *</label>
-                                <input type="email" name="" id="" className='RegisterModal__form-select-box ' />
+                                <input type="email" name="email" id="" className='RegisterModal__form-select-box' value={formData.email} onChange={handleChange} required/>
                             </div>
 
                             <div className="RegisterModal__form-container-box">
                                 <label htmlFor="">Phone *</label>
-                                <input type="number" name="" id=""  className='RegisterModal__form-select-box '/>
+                                <input type="number" name="phone" id=""  className='RegisterModal__form-select-box' value={formData.phone} onChange={handleChange} required />
                             </div>
 
                             <div className="RegisterModal__form-container">
                                 <label htmlFor="">Highest Degree *</label>
-                                <select name="" id="" className='RegisterModal__form-select'>
+                                <select name="highest_degree" id="" className='RegisterModal__form-select' value={formData.highest_degree} onChange={handleChange} required>
                                     <option value=""></option>
                                     <option value="B.Tech / BE">B.Tech / BE</option>
                                     <option value="BCA">BCA</option>
@@ -60,11 +101,21 @@ const CallBack = (props) => {
 
                             <div className="RegisterModal__form-container">
                                 <label htmlFor="">Branch </label>
-                                <select name="" id="" className='RegisterModal__form-select'>
+                                <select name="branch" id="" className='RegisterModal__form-select' value={formData.branch} onChange={handleChange} required>
                                     <option value=''></option>
                                     <option value="CSE/ IT">CSE/ IT</option>
                                     <option value="Electrical/Electronics">Electrical/Electronics</option>
                                     <option value="Others">Others</option>
+                                </select>
+                            </div>
+
+                            <div className="RegisterModal__form-container">
+                                <label htmlFor="">passing out </label>
+                                <select name="passing_out" id="" className="RegisterModal__form-select" value={formData.passing_out} onChange={handleChange} >
+                                    <option value=""></option>
+                                    <option value={2022}>2022</option>
+                                    <option value={2023}>2023</option>
+                                    <option value={2021}>2021</option>
                                 </select>
                             </div>
 
@@ -81,17 +132,17 @@ const CallBack = (props) => {
                             </div>
 
                             <div className="RegisterModal-form-accept-terms-and-conditions-container">
-                                <input type="checkbox" name="" id="" className='RegisterModal-form-accept-terms-and-conditions-checkbox' />
+                                <input type="checkbox" name="" id="" className='RegisterModal-form-accept-terms-and-conditions-checkbox' required />
                                 <span className='RegisterModal-form-accept-terms-and-conditions-label'>I agree to the <Link className="RegisterModal-form-accept-terms-and-conditions-term">terms and conditions . </Link></span>
                             </div>
 
                             <div className="RegisterModal--button">
-                                <button className="RegisterModal--button-btn-active">Submit</button>
+                                <button className="RegisterModal--button-btn-active" type='submit'>Submit</button>
                             </div>
 
                         </div>
                     </div>
-                    <p className='RegisterModal-form-main--right--status-error'>Thanku For Submitting Form </p>
+                    <p className='RegisterModal-form-main--right--status-error'>{msg}</p>
 
                 </form>
 

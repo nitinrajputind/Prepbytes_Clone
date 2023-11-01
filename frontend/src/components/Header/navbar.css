@@ -7,7 +7,7 @@
   max-height: 76px;
   position: sticky;
   top: 0;
-  z-index: 100000;
+  z-index: 100;
 }
 .logo img {
   height: 75px;

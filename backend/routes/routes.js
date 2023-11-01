@@ -1,3 +1,4 @@
+const UserCallBack = require("../controller/CallBackController");
 const ProjectData = require("../controller/ProjectController");
 const mocktest = require("../controller/mockController");
 const tutorial = require("../controller/tutorialController");
@@ -27,6 +28,9 @@ routes.get("/dashboard",userAuth , dashboard);
 
 // Enquire Form
 routes.post('/enquire', userQuery)
+
+// CallBack Form 
+routes.post('/callbackForm', UserCallBack)
 
 
 
