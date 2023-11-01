@@ -6,6 +6,7 @@ import { addtocart } from '../../Redux/Slice/CreateSlice';
 import { loadStripe } from '@stripe/stripe-js';
 import axios from 'axios';
 import { useDispatch, useSelector } from 'react-redux';
+import CallBack from '../CallBackForm/CallBack';
 
 
 const ElevationHeader = () => {
@@ -97,21 +98,15 @@ const ElevationHeader = () => {
       }
     };
 
-
-
-
-
-
-
-
-
-
-
-
+    const[toogle, setToogle] = useState(false)
+    const handleToogle =()=>{
+      setToogle(!toogle)
+    }
 
 
   return (
     <div className="IncomeSharingHeader">
+
         <section className="IncomeSharingHeader-main">
 
             <div className="IncomeSharingHeader-main__right">
@@ -153,9 +148,7 @@ const ElevationHeader = () => {
                         
                     </div>
                     <div className="IncomeSharingHeader-main__left-buttons--button">
-                        <Link to={"/CallBack"}>
-                          <button className="IncomeSharingHeader-main__left-buttons--button-knowmore">Get a call back</button>
-                        </Link>
+                        <button className="IncomeSharingHeader-main__left-buttons--button-knowmore" onClick={handleToogle}>Get a call back</button>
                     </div>
                 </div>
 
@@ -165,6 +158,9 @@ const ElevationHeader = () => {
 
 
         </section>
+
+
+        <CallBack toogle= {toogle}  handleToogle={handleToogle}/>
     </div>
   )
 }
