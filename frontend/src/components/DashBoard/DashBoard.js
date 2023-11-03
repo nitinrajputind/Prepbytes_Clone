@@ -167,7 +167,7 @@ const DashBoard = () => {
                   })}
               </div>) 
               : 
-              ( <h1 className="dashboard-empty">Empty data</h1>)}
+              ( <h3 className="dashboard-empty">No Courses / Test</h3>)}
             </div>
           </div>
         </div>

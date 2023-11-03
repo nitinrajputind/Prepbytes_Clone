@@ -475,6 +475,13 @@
     }     
 }
 
+.dashboard-empty{
+    font-size: 25px;
+    color: #707070;
+    font-weight: 600;
+    padding-left: 30px;
+}
+
 
 @media screen and (max-width: 600px) {
     .mycourses-section_courses-container {
